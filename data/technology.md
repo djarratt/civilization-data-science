@@ -9,3 +9,4 @@ This file describes the technologies that make up the technology tree. The tree 
 1. costSciencePoints: integer. The base amount this technology costs to obtain, though the game contains many modifiers that affect the actual final cost.
 1. columnOnTree: integer. The column this technology is placed on in the tree's grid layout. Each column has a higher base science cost than the previous column, and therefore higher column values roughly correspond to later historic years. 
 1. rowOnTree: integer. The row this technology is placed on in the tree's grid layout. Rows have no historic connotation, though technologies are organized so that arrows (i.e., edges) may run parallel or overlap but never cross.
+1. notes: string, nullable. Special notes about this technology.

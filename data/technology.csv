@@ -1,82 +1,82 @@
-﻿technologyID,eraID,name,costSciencePoints,columnOnTree,rowOnTree
-1,1,Agriculture,20,1,6
-2,1,Pottery,35,2,2
-3,1,Animal Husbandry,35,2,5
-4,1,Archery,35,2,7
-5,1,Mining,35,2,9
-6,1,Sailing,55,3,1
-7,1,Calendar,55,3,2
-8,1,Writing,55,3,3
-9,1,Trapping,55,3,5
-10,1,The Wheel,55,3,7
-11,1,Masonry,55,3,9
-12,1,Bronze Working,55,3,10
-13,2,Optics,85,4,1
-14,2,Horseback Riding,85,4,5
-15,2,Mathematics,85,4,7
-16,2,Construction,85,4,9
-17,2,Philosophy,175,5,2
-18,2,Drama and Poetry,175,5,3
-19,2,Currency,175,5,7
-20,2,Engineering,175,5,8
-21,2,Iron Working,175,5,10
-22,3,Theology,275,6,2
-23,3,Civil Service,275,6,5
-24,3,Guilds,275,6,7
-25,3,Metal Casting,275,6,9
-26,3,Compass,485,7,1
-27,3,Education,485,7,3
-28,3,Chivalry,485,7,6
-29,3,Machinery,485,7,8
-30,3,Physics,485,7,9
-31,3,Steel,485,7,10
-32,4,Astronomy,780,8,2
-33,4,Acoustics,780,8,4
-34,4,Banking,780,8,6
-35,4,Printing Press,780,8,8
-36,4,Gunpowder,780,8,10
-37,4,Navigation,1150,9,2
-38,4,Architecture,1150,9,4
-39,4,Economics,1150,9,6
-40,4,Metallurgy,1150,9,9
-41,4,Chemistry,1150,9,10
-42,5,Archaeology,1300,10,2
-43,5,Scientific Theory,1300,10,4
-44,5,Industrialization,1300,10,6
-45,5,Rifling,1300,10,7
-46,5,Military Science,1300,10,9
-47,5,Fertilizer,1300,10,10
-48,5,Biology,2000,11,2
-49,5,Electricity,2000,11,3
-50,5,Steam Power,2000,11,6
-51,5,Dynamite,2000,11,9
-52,6,Refrigeration,3100,12,2
-53,6,Radio,3100,12,3
-54,6,Replaceable Parts,3100,12,4
-55,6,Flight,3100,12,6
-56,6,Railroad,3100,12,8
-57,6,Plastics,4100,13,3
-58,6,Electronics,4100,13,5
-59,6,Ballistics,4100,13,6
-60,6,Combustion,4100,13,8
-61,7,Penicillin,5100,14,2
-62,7,Atomic Theory,5100,14,4
-63,7,Radar,5100,14,6
-64,7,Combined Arms,5100,14,8
-65,7,Ecology,6400,15,2
-66,7,Nuclear Fission,6400,15,4
-67,7,Rocketry,6400,15,6
-68,7,Computers,6400,15,8
-69,8,Telecommunications,7700,16,2
-70,8,Mobile Tactics,7700,16,3
-71,8,Advanced Ballistics,7700,16,5
-72,8,Satellites,7700,16,6
-73,8,Robotics,7700,16,7
-74,8,Lasers,7700,16,8
-75,8,The Internet,8800,17,1
-76,8,Globalization,8800,17,2
-77,8,Particle Physics,8800,17,3
-78,8,Nuclear Fusion,8800,17,6
-79,8,Nanotechnology,8800,17,7
-80,8,Stealth,8800,17,8
-81,8,Future Tech,9500,18,5
+﻿technologyID,eraID,name,costSciencePoints,columnOnTree,rowOnTree,notes
+1,1,Agriculture,20,1,6,All civilizations start with Agriculture already researched.
+2,1,Pottery,35,2,2,
+3,1,Animal Husbandry,35,2,5,
+4,1,Archery,35,2,7,
+5,1,Mining,35,2,9,
+6,1,Sailing,55,3,1,
+7,1,Calendar,55,3,2,
+8,1,Writing,55,3,3,
+9,1,Trapping,55,3,5,
+10,1,The Wheel,55,3,7,
+11,1,Masonry,55,3,9,
+12,1,Bronze Working,55,3,10,
+13,2,Optics,85,4,1,
+14,2,Horseback Riding,85,4,5,
+15,2,Mathematics,85,4,7,
+16,2,Construction,85,4,9,
+17,2,Philosophy,175,5,2,
+18,2,Drama and Poetry,175,5,3,
+19,2,Currency,175,5,7,
+20,2,Engineering,175,5,8,
+21,2,Iron Working,175,5,10,
+22,3,Theology,275,6,2,
+23,3,Civil Service,275,6,5,
+24,3,Guilds,275,6,7,
+25,3,Metal Casting,275,6,9,
+26,3,Compass,485,7,1,
+27,3,Education,485,7,3,
+28,3,Chivalry,485,7,6,
+29,3,Machinery,485,7,8,
+30,3,Physics,485,7,9,
+31,3,Steel,485,7,10,
+32,4,Astronomy,780,8,2,
+33,4,Acoustics,780,8,4,
+34,4,Banking,780,8,6,
+35,4,Printing Press,780,8,8,
+36,4,Gunpowder,780,8,10,
+37,4,Navigation,1150,9,2,
+38,4,Architecture,1150,9,4,
+39,4,Economics,1150,9,6,
+40,4,Metallurgy,1150,9,9,
+41,4,Chemistry,1150,9,10,
+42,5,Archaeology,1300,10,2,
+43,5,Scientific Theory,1300,10,4,
+44,5,Industrialization,1300,10,6,
+45,5,Rifling,1300,10,7,
+46,5,Military Science,1300,10,9,
+47,5,Fertilizer,1300,10,10,
+48,5,Biology,2000,11,2,
+49,5,Electricity,2000,11,3,
+50,5,Steam Power,2000,11,6,
+51,5,Dynamite,2000,11,9,
+52,6,Refrigeration,3100,12,2,
+53,6,Radio,3100,12,3,
+54,6,Replaceable Parts,3100,12,4,
+55,6,Flight,3100,12,6,
+56,6,Railroad,3100,12,8,
+57,6,Plastics,4100,13,3,
+58,6,Electronics,4100,13,5,
+59,6,Ballistics,4100,13,6,
+60,6,Combustion,4100,13,8,
+61,7,Penicillin,5100,14,2,
+62,7,Atomic Theory,5100,14,4,
+63,7,Radar,5100,14,6,
+64,7,Combined Arms,5100,14,8,
+65,7,Ecology,6400,15,2,
+66,7,Nuclear Fission,6400,15,4,
+67,7,Rocketry,6400,15,6,
+68,7,Computers,6400,15,8,
+69,8,Telecommunications,7700,16,2,
+70,8,Mobile Tactics,7700,16,3,
+71,8,Advanced Ballistics,7700,16,5,
+72,8,Satellites,7700,16,6,
+73,8,Robotics,7700,16,7,
+74,8,Lasers,7700,16,8,
+75,8,The Internet,8800,17,1,
+76,8,Globalization,8800,17,2,
+77,8,Particle Physics,8800,17,3,
+78,8,Nuclear Fusion,8800,17,6,
+79,8,Nanotechnology,8800,17,7,
+80,8,Stealth,8800,17,8,
+81,8,Future Tech,9500,18,5,Future Tech may be researched multiple times.
