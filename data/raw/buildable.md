@@ -12,4 +12,3 @@ This file describes the buildings and units that a city may produce.
 1. dependsOnBuildableID: integer, foreign key referencing buildable.csv:buildableID, nullable.
 1. uniqueToCivilizationID: integer, foreign key referencing civilization.csv:civilizationID, nullable.
 1. replacesBuildableID: integer, foreign key referencing buildable.csv:buildableID, nullable.
-1. givesFreeBuildableID: integer, foreign key referencing buildable.csv:buildableID, nullable.

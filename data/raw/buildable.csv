@@ -1,4 +1,4 @@
-﻿buildableID,name,classification,costProductionPoints,maintenanceCostGold,dependsOnTechnologyID,dependsOnBuildableID,uniqueToCivilizationID,replacesBuildableID,givesFreeBuildableID
+﻿buildableID,name,classification,costProductionPoints,maintenanceCostGold,dependsOnTechnologyID,dependsOnBuildableID,dependsOnSocialPolicyID,uniqueToCivilizationID,replacesBuildableID
 1,Monument,Building,40,1,1,,,,
 2,Granary,Building,60,1,2,,,,
 3,Library,Building,75,1,8,,,,
@@ -8,18 +8,41 @@
 7,Stone Works,Building,75,1,7,,,,
 8,Circus,Building,75,0,9,,,,
 9,Barracks,Building,75,1,12,,,,
-10,Ikanda,Building,75,1,12,,43,9,
-11,Krepost,Building,75,1,12,,36,9,
-12,Paper Maker,Building,75,0,8,,11,3,
-13,Royal Library,Building,75,1,8,,3,3,
-14,Stele,Building,40,1,1,,15,1,
-15,Pyramid,Building,40,1,2,,26,4,
-16,Walls of Babylon,Building,65,0,11,,6,6,
-17,Floating Gardens,Building,75,1,10,,5,5,
-18,Great Library,World Wonder,185,0,8,,,,3
+10,Ikanda,Building,75,1,12,,,43,9
+11,Krepost,Building,75,1,12,,,36,9
+12,Paper Maker,Building,75,0,8,,,11,3
+13,Royal Library,Building,75,1,8,,,3,3
+14,Stele,Building,40,1,1,,,15,1
+15,Pyramid,Building,40,1,2,,,26,4
+16,Walls of Babylon,Building,65,0,11,,,6,6
+17,Floating Gardens,Building,75,1,10,,,5,5
+18,Great Library,World Wonder,185,0,8,,,,
 19,Mausoleum of Halicarnassus,World Wonder,185,0,11,,,,
 20,Pyramids,World Wonder,185,0,11,,,,
 21,Statue of Zeus,World Wonder,185,0,12,,,,
 22,Stonehenge,World Wonder,185,0,7,,,,
 23,Temple of Artemis,World Wonder,185,0,4,,,,
 24,Palace,Capital Building,0,0,1,,,,
+25,Amphitheater,Building,100,2,18,1,,,
+26,Aqueduct,Building,100,1,20,,,,
+27,Caravansary,Building,120,0,14,,,,
+28,Colosseum,Building,100,1,16,,,,
+29,Courthouse,Building,100,4,15,,,,
+30,Lighthouse,Building,75,1,13,,,,
+31,Market,Building,100,0,19,,,,
+32,Bazaar,Building,100,0,19,,,2,31
+33,Mint,Building,100,0,19,,,,
+34,Stable,Building,100,1,14,,,,
+35,Ducal Stable,Building,75,0,14,,,32,34
+36,Temple,Building,100,2,17,4,,,
+37,Burial Tomb,Building,100,0,17,4,,13,36
+38,Mud Pyramid Mosque,Building,100,0,17,4,,39,36
+39,Colossus,World Wonder,185,0,21,,,,
+40,Great Lighthouse,World Wonder,185,0,13,,,,
+41,Great Wall,World Wonder,250,0,20,,,,
+42,Hanging Gardens,World Wonder,250,0,15,,1,,
+43,Oracle,World Wonder,250,0,17,,,,
+44,Parthenon,World Wonder,250,0,18,,,,
+45,Petra,World Wonder,250,0,19,,,,
+46,Terracotta Army,World Wonder,250,0,16,,,,
+47,Garden,Building,120,1,22,,,,
