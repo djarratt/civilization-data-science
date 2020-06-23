@@ -3,7 +3,7 @@
 This file describes the buildings and units that a city may produce.
 
 ## Fields
-1. buildableID: integer, primary key, unique.
+1. buildableID: integer, primary key, unique, not nullable.
 1. name: string, not nullable.
 1. classification: string from set [Building, Capital Building, World Wonder, National Wonder, Project, International Project, Guild, Unit], not nullable.
 1. costProductionPoints: integer, not nullable, not negative.
