@@ -6,7 +6,7 @@ This file describes the buildings and units that a city may produce.
 1. buildableID: integer, primary key, unique, not nullable.
 1. name: string, not nullable.
 1. classification: string from set [Building, Capital Building, World Wonder, National Wonder, Project, International Project, Guild, Unit], not nullable.
-1. costProductionPoints: integer, not nullable, not negative.
+1. costProductionPoints: integer, not nullable, not negative. These apply to standard game speed. For International Projects, this value is the minimum required to attain the reward on a standard map with 8 civilizations.
 1. costFaithPoints: integer, not nullable, not negative.
 1. maintenanceCostGold: integer, not nullable, not negative.
 1. dependsOnTechnologyID: integer, foreign key referencing technology.csv:technologyID, nullable.
