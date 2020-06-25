@@ -1,0 +1,8 @@
+﻿citizenID,name,classification
+1,Citizen,Non-specialist
+2,Artist,Specialist
+3,Musician,Specialist
+4,Writer,Specialist
+5,Engineer,Specialist
+6,Merchant,Specialist
+7,Scientist,Specialist
