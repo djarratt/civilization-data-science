@@ -284,15 +284,15 @@
 283,Zero,Fighter Unit,,,,,,,,,,,,,,,,,,FALSE
 284,Helicopter Gunship,Helicopter Unit,,,,,,,,,,,,,,,,,,FALSE
 285,Atomic Bomb,Bomb Unit,,,,,,,,,,,,,,,,,,FALSE
-286,Mechanized Infantry,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-287,XCOM Squad,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-288,Missile Cruiser,Ranged Unit,,,,,,,,,,,,,,,,,,TRUE
-289,Nuclear Submarine,Ranged Unit,,,,,,,,,,,,,,,,,,TRUE
-290,Modern Armor,Armored Unit,,,,,,,291,,,,,,,,,,,FALSE
-291,Giant Death Robot,Armored Unit,,,,,,,,,,,,,,,,,,FALSE
-292,Stealth Bomber,Bomber Unit,,,,,,,,,,,,,,,,,,FALSE
-293,Jet Fighter,Fighter Unit,,,,,,,,,,,,,,,,,,FALSE
-294,Guided Missile,Bomb Unit,,,,,,,,,,,,,,,,,,FALSE
-295,Nuclear Missile,Bomb Unit,,,,,,,,,,,,,,,,,,FALSE
+286,Mechanized Infantry,Gunpowder Unit,375,0,,3,70,,,,,,,,,90,,,,FALSE
+287,XCOM Squad,Gunpowder Unit,400,0,,2,79,,,,,,,,,100,,,,FALSE
+288,Missile Cruiser,Ranged Unit,425,0,,7,73,,,,,,,,,80,3,100,,TRUE
+289,Nuclear Submarine,Ranged Unit,425,0,,6,69,,,,,,,,,50,3,85,,TRUE
+290,Modern Armor,Armored Unit,425,0,,5,74,,291,,,,,,,100,,,,FALSE
+291,Giant Death Robot,Armored Unit,425,0,,5,78,,,,,,,,,150,,,,FALSE
+292,Stealth Bomber,Bomber Unit,425,0,,2,80,,,,,,,,,,20,85,,FALSE
+293,Jet Fighter,Fighter Unit,425,0,,,74,,,,,,,,,,10,75,,FALSE
+294,Guided Missile,Bomb Unit,150,0,,,71,,,,,,,,,,8,60,,FALSE
+295,Nuclear Missile,Bomb Unit,1000,0,,,71,137,,,,,,,,,12,,,FALSE
 296,Brute,Melee Unit,20,0,,2,,,203,,,44,186,,,8,,,,FALSE
 297,Galley,Melee Unit,40,0,,3,,,196,,,44,,,,7,,,,TRUE
