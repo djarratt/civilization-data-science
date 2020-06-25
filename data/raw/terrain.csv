@@ -1,0 +1,35 @@
+﻿terrainID,name,classification,featureClassification
+1,Coast,Water,Base
+2,Desert,Open,Base
+3,Grassland,Open,Base
+4,Hill,Rough,Base
+5,Mountain,Generally Impassable,Base
+6,Ocean,Water,Base
+7,Plains,Open,Base
+8,Snow,Open,Base
+9,Tundra,Open,Base
+10,Forest,Rough,Vegetation
+11,Jungle,Rough,Vegetation
+12,Marsh,Open,Vegetation
+13,Atoll,Water,Base
+14,Flood Plains,Open,Base
+15,Ice,Generally Impassable,Base
+16,Lake,Water,Base
+17,Oasis,Water,Base
+18,Barringer Crater,Natural Wonder,Base
+19,Grand Mesa,Natural Wonder,Base
+20,Great Barrier Reef,Natural Wonder,Base
+21,Krakatoa,Natural Wonder,Base
+22,Mt. Fuji,Natural Wonder,Base
+23,Old Faithful,Natural Wonder,Base
+24,Rock of Gibraltar,Natural Wonder,Base
+25,Cerro de Potosi,Natural Wonder,Base
+26,El Dorado,Natural Wonder,Base
+27,Fountain of Youth,Natural Wonder,Base
+28,Mt. Kailash,Natural Wonder,Base
+29,Mt. Sinai,Natural Wonder,Base
+30,Sri Pada,Natural Wonder,Base
+31,Uluru,Natural Wonder,Base
+32,King Solomon's Mines,Natural Wonder,Base
+33,Lake Victoria,Natural Wonder,Base
+34,Mt. Kilimanjaro,Natural Wonder,Base
