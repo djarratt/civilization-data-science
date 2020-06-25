@@ -5,7 +5,7 @@ This file describes the buildings and units that a city may produce.
 ## Fields
 1. buildableID: integer, primary key, unique, not nullable.
 1. name: string, not nullable.
-1. classification: string from set [Building, Capital Building, World Wonder, National Wonder, Project, International Project, Guild, Civilian Unit, Naval Civilian Unit, Religious Unit, Trade Unit, Naval Trade Unit, Great Person, Naval Great Person, Ranged Unit, Melee Unit, Naval Melee Unit, Naval Ranged Unit, Siege Weapon, Mounted Unit, Gunpowder Unit, Armored Unit, Bomber Unit, Fighter Unit, Helicopter Unit, Bomb Unit], not nullable.
+1. classification: string from set [Building, Capital Building, World Wonder, National Wonder, Project, International Project, Guild, Civilian Unit, Religious Unit, Trade Unit, Great Person, Ranged Unit, Melee Unit, Siege Weapon, Mounted Unit, Gunpowder Unit, Armored Unit, Bomber Unit, Fighter Unit, Helicopter Unit, Bomb Unit], not nullable.
 1. costProductionPoints: integer, not nullable, not negative. These apply to standard game speed. For International Projects, this value is the minimum required to attain the reward on a standard map with 8 civilizations.
 1. costFaithPoints: integer, not nullable, not negative.
 1. maintenanceCostGold: integer, nullable, not negative.
@@ -23,3 +23,4 @@ This file describes the buildings and units that a city may produce.
 1. range: integer, nullable, not negative. Number of tiles away this unit can shoot, if ranged.
 1. rangedStrength: integer, nullable, not negative. Combat strength projected by this unit during a ranged attack.
 1. ancientRuinsUpgradeToBuildableID: integer, foreign key referencing buildable.csv:buildableID, nullable. Ancient Ruins upgrade this unit differently than the normal upgrade path.
+1. naval: boolean, not nullable. TRUE means a building or wonder that can only be constructed in a coastal city, or a unit that can only exist on water tiles.
