@@ -12,3 +12,4 @@
 1. Sight and zone of control and attacks per turn and other unit stats
 1. Religious influence
 1. City statuses: capital, regular, occupied, holy city, ...
+1. Golden Ages

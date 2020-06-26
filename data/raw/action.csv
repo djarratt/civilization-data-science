@@ -1,0 +1,5 @@
+﻿actionID,name,extendsActionID,createsImprovementID
+1,Great Tile improvement,,
+2,Start a Golden Age,,
+3,Construct a Citadel,1,16
+4,Heal,,
