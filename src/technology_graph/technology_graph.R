@@ -10,6 +10,7 @@ technology = read_csv("../../data/raw/technology.csv")
 buildable = read_csv("../../data/raw/buildable.csv")
 effect = read_csv("../../data/raw/effect.csv")
 improvement = read_csv("../../data/raw/improvement.csv")
+resource = read_csv("../../data/raw/resource.csv")
 technology_dependency = read_csv("../../data/raw/technologyDependency.csv")
 
 technology_graph = technology_dependency %>%
@@ -63,12 +64,26 @@ technology_buildable_graph = buildable %>%
              by = c("dependsOnTechnologyID" = "technologyID")) %>%
   select(to = name, from)
 
+technology_resource_graph = resource %>%
+  filter(!is.na(dependsOnTechnologyID)) %>%
+  inner_join(technology %>% rename(from = name),
+             by = c("dependsOnTechnologyID" = "technologyID")) %>%
+  select(to = name, from)
+
+buildable_resource_graph = buildable %>%
+  filter(!is.na(dependsOnResourceID)) %>%
+  inner_join(resource %>% rename(from = name),
+             by = c("dependsOnResourceID" = "resourceID")) %>%
+  select(to = name, from)
+
 graph_data = technology_graph %>%
   bind_rows(buildable_graph) %>%
   bind_rows(technology_buildable_graph) %>%
   bind_rows(unit_upgrade_graph) %>%
   bind_rows(improvement_graph) %>%
-  bind_rows(effect_graph)
+  bind_rows(effect_graph) %>%
+  bind_rows(technology_resource_graph) %>%
+  bind_rows(buildable_resource_graph)
 graph_data_dense = graph_data %>%
   select(from = to, to = from)  # we want direction of centrality importance
                                 # to flow backwards in time
