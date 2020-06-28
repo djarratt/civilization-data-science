@@ -1,18 +1,18 @@
-﻿improvementID,name,classification,dependsOnBuildableID,dependsOnTechnologyID,uniqueToCivilizationID,maintenanceCostGold
-1,Farm,Standard,161,,,
+﻿improvementID,name,classification,improvedByBuildableID,dependsOnTechnologyID,uniqueToCivilizationID,maintenanceCostGold
+1,Farm,Standard,161,1,,
 2,Fort,Standard,161,,,
 3,Lumber Mill,Standard,161,,,
 4,Mine,Standard,161,,,
 5,Trading Post,Standard,161,,,
 6,Road,Transport,161,10,,1
 7,Railroad,Transport,161,56,,2
-8,Camp,Resource,161,,,
-9,Fishing Boat,Resource,160,,,
+8,Camp,Resource,161,9,,
+9,Fishing Boat,Resource,160,6,,
 10,Offshore Platform,Resource,160,,,
 11,Oil Well,Resource,161,,,
-12,Pasture,Resource,161,,,
-13,Plantation,Resource,161,,,
-14,Quarry,Resource,161,,,
+12,Pasture,Resource,161,3,,
+13,Plantation,Resource,161,7,,
+14,Quarry,Resource,161,11,,
 15,Academy,Great Tile,172,,,
 16,Citadel,Great Tile,168,,,
 17,Customs House,Great Tile,170,,,

@@ -11,12 +11,42 @@ buildable = read_csv("../../data/raw/buildable.csv")
 effect = read_csv("../../data/raw/effect.csv")
 improvement = read_csv("../../data/raw/improvement.csv")
 resource = read_csv("../../data/raw/resource.csv")
+terrain = read_csv("../../data/raw/terrain.csv")
 technology_dependency = read_csv("../../data/raw/technologyDependency.csv")
+resource_improvement = read_csv("../../data/raw/resourceImprovement.csv")
+terrain_improvement = read_csv("../../data/raw/terrainImprovement.csv")
+resource_terrain = read_csv("../../data/raw/resourceTerrain.csv")
+water_type = read_csv("../../data/raw/waterType.csv")
 
 technology_graph = technology_dependency %>%
   inner_join(technology %>% rename(to = name), by = "technologyID") %>%
   inner_join(technology %>% rename(from = name),
              by = c("dependsOnTechnologyID" = "technologyID")) %>%
+  select(from, to)
+
+resource_graph = resource %>%
+  inner_join(technology %>% rename(from = name),
+             by = c("visibleWithTechnologyID" = "technologyID")) %>%
+  select(from, to = name)
+
+terrain_graph = terrain %>%
+  filter(!is.na(waterTypeID)) %>%
+  inner_join(water_type %>% rename(from = name), by = "waterTypeID") %>%
+  select(from, to = name)
+
+resource_improvement_graph = resource_improvement %>%
+  inner_join(resource %>% rename(to = name), by = "resourceID") %>%
+  inner_join(improvement %>% rename(from = name), by = "improvementID") %>%
+  select(from, to)
+
+terrain_improvement_graph = terrain_improvement %>%
+  inner_join(terrain %>% rename(to = name), by = "terrainID") %>%
+  inner_join(improvement %>% rename(from = name), by = "improvementID") %>%
+  select(from, to)
+
+resource_terrain_graph = resource_terrain %>%
+  inner_join(resource %>% rename(to = name), by = "resourceID") %>%
+  inner_join(terrain %>% rename(from = name), by = "terrainID") %>%
   select(from, to)
 
 buildable_graph = buildable %>%
@@ -46,13 +76,13 @@ effect_graph = effect %>%
   select(to, from)
 
 improvement_graph = improvement %>%
-  filter(!is.na(dependsOnTechnologyID), !is.na(dependsOnBuildableID)) %>%
+  filter(!is.na(dependsOnTechnologyID), !is.na(improvedByBuildableID)) %>%
   inner_join(buildable %>% rename(from = name),
-             by = c("dependsOnBuildableID" = "buildableID")) %>%
+             by = c("improvedByBuildableID" = "buildableID")) %>%
   select(to = name, from) %>%
   bind_rows(
     improvement %>%
-      filter(!is.na(dependsOnTechnologyID), !is.na(dependsOnBuildableID)) %>%
+      filter(!is.na(dependsOnTechnologyID), !is.na(improvedByBuildableID)) %>%
       inner_join(technology %>% rename(from = name),
                  by = c("dependsOnTechnologyID" = "technologyID")) %>%
       select(to = name, from)
@@ -65,9 +95,9 @@ technology_buildable_graph = buildable %>%
   select(to = name, from)
 
 technology_resource_graph = resource %>%
-  filter(!is.na(dependsOnTechnologyID)) %>%
+  filter(!is.na(visibleWithTechnologyID)) %>%
   inner_join(technology %>% rename(from = name),
-             by = c("dependsOnTechnologyID" = "technologyID")) %>%
+             by = c("visibleWithTechnologyID" = "technologyID")) %>%
   select(to = name, from)
 
 buildable_resource_graph = buildable %>%
@@ -83,7 +113,12 @@ graph_data = technology_graph %>%
   bind_rows(improvement_graph) %>%
   bind_rows(effect_graph) %>%
   bind_rows(technology_resource_graph) %>%
-  bind_rows(buildable_resource_graph)
+  bind_rows(buildable_resource_graph) %>%
+  bind_rows(terrain_graph) %>%
+  bind_rows(resource_graph) %>%
+  bind_rows(resource_improvement_graph) %>%
+  bind_rows(terrain_improvement_graph) %>%
+  bind_rows(resource_terrain_graph)
 graph_data_dense = graph_data %>%
   select(from = to, to = from)  # we want direction of centrality importance
                                 # to flow backwards in time
@@ -102,7 +137,8 @@ ggplot(eigen, aes(centrality, y, label = rownames(eigen))) +
   geom_point() + geom_text(angle = 45)
 
 # igraph_layouts <- c('star', 'circle', 'gem', 'dh', 'graphopt', 'grid', 'mds', 'randomly', 'fr', 'kk', 'drl', 'lgl')
-ggraph(graph_tbl_with_metrics, layout = 'fr') +
+# filter(community_infomap > 0)
+ggraph(graph_tbl_with_metrics, layout = 'auto') +   # 'fr' works well, 'stress' too
   geom_edge_link() +
   geom_node_text(aes(label = name, color = community_infomap)) +
   theme_graph() +

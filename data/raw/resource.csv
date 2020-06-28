@@ -1,4 +1,4 @@
-﻿resourceID,name,classification,dependsOnTechnologyID,uniqueToCivilizationID,greatPersonPool
+﻿resourceID,name,classification,visibleWithTechnologyID,uniqueToCivilizationID,greatPersonPool
 1,Bananas,Bonus Resource,,,
 2,Wheat,Bonus Resource,,,
 3,Cattle,Bonus Resource,,,
