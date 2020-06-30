@@ -1,298 +1,298 @@
-﻿buildableID,name,classification,costProductionPoints,costFaithPoints,maintenanceCostGold,dependsOnTechnologyID,dependsOnBuildableID,upgradesToBuildableID,dependsOnSocialPolicyID,dependsOnReligiousBeliefID,dependsOnResourceID,uniqueToCivilizationID,replacesBuildableID,disallowedWithBuildingID,disallowedWithCivilizationID,combatStrength,range,rangedStrength,ancientRuinsUpgradeToBuildableID,naval
-1,Monument,Building,40,0,1,1,,,,,,,,,,,,,,FALSE
-2,Granary,Building,60,0,1,2,,,,,,,,,,,,,,FALSE
-3,Library,Building,75,0,1,8,,,,,,,,,,,,,,FALSE
-4,Shrine,Building,40,0,1,2,,,,,,,,,,,,,,FALSE
-5,Water Mill,Building,75,0,2,10,,,,,,,,,,,,,,FALSE
-6,Walls,Building,75,0,0,11,,,,,,,,,,,,,,FALSE
-7,Stone Works,Building,75,0,1,7,,,,,8,,,,,,,,,FALSE
-8,Circus,Building,75,0,0,9,,,,,9,,,,,,,,,FALSE
-9,Barracks,Building,75,0,1,12,,,,,,,,,,,,,,FALSE
-10,Ikanda,Building,75,0,1,12,,,,,,43,9,,,,,,,FALSE
-11,Krepost,Building,75,0,1,12,,,,,,36,9,,,,,,,FALSE
-12,Paper Maker,Building,75,0,0,8,,,,,,11,3,,,,,,,FALSE
-13,Royal Library,Building,75,0,1,8,,,,,,3,3,,,,,,,FALSE
-14,Stele,Building,40,0,1,1,,,,,,15,1,,,,,,,FALSE
-15,Pyramid,Building,40,0,1,2,,,,,,26,4,,,,,,,FALSE
-16,Walls of Babylon,Building,65,0,0,11,,,,,,6,6,,,,,,,FALSE
-17,Floating Gardens,Building,75,0,1,10,,,,,,5,5,,,,,,,FALSE
-18,Great Library,World Wonder,185,0,0,8,,,,,,,,,,,,,,FALSE
-19,Mausoleum of Halicarnassus,World Wonder,185,0,0,11,,,,,,,,,,,,,,FALSE
-20,Pyramids,World Wonder,185,0,0,11,,,2,,,,,,,,,,,FALSE
-21,Statue of Zeus,World Wonder,185,0,0,12,,,3,,,,,,,,,,,FALSE
-22,Stonehenge,World Wonder,185,0,0,7,,,,,,,,,,,,,,FALSE
-23,Temple of Artemis,World Wonder,185,0,0,4,,,,,,,,,,,,,,FALSE
-24,Palace,Capital Building,0,0,0,1,,,,,,,,,,,,,,FALSE
-25,Amphitheater,Building,100,0,2,18,1,,,,,,,,,,,,,FALSE
-26,Aqueduct,Building,100,0,1,20,,,,,,,,,,,,,,FALSE
-27,Caravansary,Building,120,0,0,14,,,,,,,,,,,,,,FALSE
-28,Colosseum,Building,100,0,1,16,,,,,,,,,,,,,,FALSE
-29,Courthouse,Building,100,0,4,15,,,,,,,,,,,,,,FALSE
-30,Lighthouse,Building,75,0,1,13,,,,,,,,,,,,,,TRUE
-31,Market,Building,100,0,0,19,,,,,,,,,,,,,,FALSE
-32,Bazaar,Building,100,0,0,19,,,,,,2,31,,,,,,,FALSE
-33,Mint,Building,100,0,0,19,,,,,,,,,,,,,,FALSE
-34,Stable,Building,100,0,1,14,,,,,9,,,,,,,,,FALSE
-35,Ducal Stable,Building,75,0,0,14,,,,,,32,34,,,,,,,FALSE
-36,Temple,Building,100,0,2,17,4,,,,,,,,,,,,,FALSE
-37,Burial Tomb,Building,100,0,0,17,4,,,,,13,36,,,,,,,FALSE
-38,Mud Pyramid Mosque,Building,100,0,0,17,4,,,,,39,36,,,,,,,FALSE
-39,Colossus,World Wonder,185,0,0,21,,,,,,,,,,,,,,TRUE
-40,Great Lighthouse,World Wonder,185,0,0,13,,,,,,,,,,,,,,TRUE
-41,Great Wall,World Wonder,250,0,0,20,,,,,,,,,,,,,,FALSE
-42,Hanging Gardens,World Wonder,250,0,0,15,,,1,,,,,,,,,,,FALSE
-43,Oracle,World Wonder,250,0,0,17,,,,,,,,,,,,,,FALSE
-44,Parthenon,World Wonder,250,0,0,18,,,,,,,,,,,,,,FALSE
-45,Petra,World Wonder,250,0,0,19,,,,,,,,,,,,,,FALSE
-46,Terracotta Army,World Wonder,250,0,0,16,,,,,,,,,,,,,,FALSE
-47,Garden,Building,120,0,1,22,,,,,,,,,,,,,,FALSE
-48,Armory,Building,160,0,1,31,9,,,,,,,,,,,,,FALSE
-49,Castle,Building,160,0,0,28,6,,,,,,,,,,,,,FALSE
-50,Mughal Fort,Building,150,0,0,28,6,,,,,21,49,,,,,,,FALSE
-51,Forge,Building,120,0,1,25,,,,,10,,,,,,,,,FALSE
-52,Candi,Building,120,0,1,22,,,,,,22,47,,,,,,,FALSE
-53,Harbor,Building,120,0,2,26,,,,,,,,,,,,,,TRUE
-54,University,Building,160,0,2,27,3,,,,,,,,,,,,,FALSE
-55,Wat,Building,160,0,2,27,3,,,,,38,54,,,,,,,FALSE
-56,Workshop,Building,120,0,2,25,,,,,,,,,,,,,,FALSE
-57,Longhouse,Building,100,0,2,25,,,,,,23,56,,,,,,,FALSE
-58,Alhambra,World Wonder,400,0,0,28,,,,,,,,,,,,,,FALSE
-59,Angkor Wat,World Wonder,400,0,0,27,,,,,,,,,,,,,,FALSE
-60,Borobudur,World Wonder,300,0,0,22,,,,,,,,,,,,,,FALSE
-61,Chichen Itza,World Wonder,300,0,0,23,,,,,,,,,,,,,,FALSE
-62,Great Mosque of Djenne,World Wonder,300,0,0,22,,,4,,,,,,,,,,,FALSE
-63,Hagia Sophia,World Wonder,300,0,0,22,,,,,,,,,,,,,,FALSE
-64,Machu Picchu,World Wonder,300,0,0,24,,,,,,,,,,,,,,FALSE
-65,Notre Dame,World Wonder,400,0,0,30,,,,,,,,,,,,,,FALSE
-66,Arsenal,Building,300,0,0,40,49,,,,,,,,,,,,,FALSE
-67,Bank,Building,200,0,0,34,31,,,,,,,,,,,,,FALSE
-68,Hanse,Building,200,0,0,34,31,,,,,17,67,,,,,,,FALSE
-69,Satrap's Court,Building,200,0,0,34,31,,,,,31,67,,,,,,,FALSE
-70,Constabulary,Building,160,0,1,34,,,,,,,,,,,,,,FALSE
-71,Observatory,Building,200,0,0,32,,,,,,,,,,,,,,FALSE
-72,Opera House,Building,200,0,1,33,25,,,,,,,,,,,,,FALSE
-73,Ceilidh Hall,Building,200,0,1,33,25,,,,,10,72,,,,,,,FALSE
-74,Seaport,Building,250,0,2,37,53,,,,,,,,,,,,,TRUE
-75,National Epic,National Wonder,125,0,0,18,1,,,,,,,,,,,,,FALSE
-76,Windmill,Building,250,0,2,39,,,,,,,,,,,,,,FALSE
-77,Coffee House,Building,250,0,2,39,,,,,,4,76,,,,,,,FALSE
-78,Zoo,Building,200,0,2,35,28,,,,,,,,,,,,,FALSE
-79,Forbidden Palace,World Wonder,500,0,0,34,,,5,,,,,,,,,,,FALSE
-80,Globe Theatre,World Wonder,500,0,0,35,,,,,,,,,,,,,,FALSE
-81,Himeji Castle,World Wonder,500,0,0,36,,,,,,,,,,,,,,FALSE
-82,Leaning Tower of Pisa,World Wonder,500,0,0,35,,,,,,,,,,,,,,FALSE
-83,Porcelain Tower,World Wonder,625,0,0,38,,,9,,,,,,,,,,,FALSE
-84,Red Fort,World Wonder,625,0,0,40,,,,,,,,,,,,,,FALSE
-85,Sistine Chapel,World Wonder,500,0,0,33,,,,,,,,,,,,,,FALSE
-86,Taj Mahal,World Wonder,625,0,0,38,,,,,,,,,,,,,,FALSE
-87,Uffizi,World Wonder,625,0,0,38,,,6,,,,,,,,,,,FALSE
-88,Factory,Building,360,0,3,44,56,,,,11,,,,,,,,,FALSE
-89,Hospital,Building,360,0,2,48,26,,,,,,,,,,,,,FALSE
-90,Hydro Plant,Building,360,0,3,49,,,,,13,,,,,,,,,FALSE
-91,Military Academy,Building,300,0,1,46,48,,,,,,,,,,,,,FALSE
-92,Museum,Building,300,0,3,42,72,,,,,,,,,,,,,FALSE
-93,Police Station,Building,300,0,1,49,70,,,,,,,,,,,,,FALSE
-94,Public School,Building,300,0,3,43,54,,,,,,,,,,,,,FALSE
-95,Stock Exchange,Building,500,0,0,49,67,,,,,,,,,,,,,FALSE
-96,Big Ben,World Wonder,750,0,0,44,,,7,,,,,,,,,,,FALSE
-97,Brandenburg Gate,World Wonder,750,0,0,46,,,,,,,,,,,,,,FALSE
-98,Louvre,World Wonder,750,0,0,42,,,8,,,,,,,,,,,FALSE
-99,Broadcast Tower,Building,500,0,3,53,92,,,,,,,,,,,,,FALSE
-100,Hotel,Building,300,0,0,52,,,,,,,,,,,,,,FALSE
-101,Military Base,Building,500,0,0,54,66,,,,,,,,,,,,,FALSE
-102,Research Lab,Building,500,0,3,57,94,,,,,,,,,,,,,FALSE
-103,Stadium,Building,500,0,2,52,78,,,,,,,,,,,,,FALSE
-104,Broadway,World Wonder,1060,0,0,53,,,,,,,,,,,,,,FALSE
-105,Eiffel Tower,World Wonder,1060,0,0,53,,,,,,,,,,,,,,FALSE
-106,Kremlin,World Wonder,1060,0,0,56,,,56,,,,,,,,,,,FALSE
-107,Neuschwanstein,World Wonder,1060,0,0,56,,,,,,,,,,,,,,FALSE
-108,Prora,World Wonder,1060,0,0,55,,,57,,,,,,,,,,,FALSE
-109,Statue of Liberty,World Wonder,1060,0,0,54,,,55,,,,,,,,,,,FALSE
-110,Cristo Redentor,World Wonder,1250,0,0,57,,,,,,,,,,,,,,FALSE
-111,Airport,Building,250,0,5,63,,,,,,,,,,,,,,FALSE
-112,Medical Lab,Building,500,0,3,61,89,,,,,,,,,,,,,FALSE
-113,Nuclear Plant,Building,500,0,3,66,88,,,,14,,,115,,,,,,FALSE
-114,Recycling Center,Building,500,0,3,65,,,,,,,,,,,,,,FALSE
-115,Solar Plant,Building,500,0,3,65,88,,,,,,,113,,,,,,FALSE
-116,Great Firewall,World Wonder,1250,0,0,68,,,,,,,,,,,,,,FALSE
-117,Pentagon,World Wonder,1250,0,0,64,,,,,,,,,,,,,,FALSE
-118,Sydney Opera House,World Wonder,1250,0,0,65,,,,,,,,,,,,,,TRUE
-119,Bomb Shelter,Building,300,0,1,69,,,,,,,,,,,,,,FALSE
-120,Spaceship Factory,Building,360,0,3,73,88,,,,13,,,,,,,,,FALSE
-121,CN Tower,World Wonder,1250,0,0,69,,,,,,,,,,,,,,FALSE
-122,Hubble Space Telescope,World Wonder,1250,0,0,72,,,,,,,,,,,,,,FALSE
-123,Circus Maximus,National Wonder,125,0,0,14,28,,,,,,,,,,,,,FALSE
-124,East India Company,National Wonder,125,0,0,24,31,,,,,,,,,,,,,FALSE
-125,Grand Temple,National Wonder,125,0,0,22,36,,,,,,,,,,,,,FALSE
-126,Hermitage,National Wonder,125,0,0,38,72,,,,,,,,,,,,,FALSE
-127,Heroic Epic,National Wonder,125,0,0,21,9,,,,,,,,,,,,,FALSE
-128,Ironworks,National Wonder,125,0,0,29,56,,,,,,,,,,,,,FALSE
-129,National College,National Wonder,125,0,0,17,3,,,,,,,,,,,,,FALSE
-130,National Intelligence Agency,National Wonder,125,0,0,53,93,,,,,,,,,,,,,FALSE
-131,Natural Visitor Center,National Wonder,400,0,0,69,100,,,,,,,,,,,,,FALSE
-132,Oxford University,National Wonder,125,0,0,27,54,,,,,,,,,,,,,FALSE
-133,Artists' Guild,Guild,150,0,1,24,,,,,,,,,,,,,,FALSE
-134,Musicians' Guild,Guild,200,0,1,33,,,,,,,,,,,,,,FALSE
-135,Writers' Guild,Guild,100,0,1,18,,,,,,,,,,,,,,FALSE
-136,Apollo Program,Project,750,0,,67,,,,,,,,,,,,,,FALSE
-137,Manhattan Project,Project,750,0,,62,,,,,,,,,,,,,,FALSE
-138,Spaceship Booster 1,Project,750,0,,71,136,,,,,,,,,,,,,FALSE
-139,Spaceship Booster 2,Project,750,0,,71,136,,,,,,,,,,,,,FALSE
-140,Spaceship Booster 3,Project,750,0,,71,136,,,,,,,,,,,,,FALSE
-141,Spaceship Cockpit,Project,750,0,,72,136,,,,,,,,,,,,,FALSE
-142,Spaceship Engine,Project,750,0,,77,136,,,,,,,,,,,,,FALSE
-143,Spaceship Stasis Chamber,Project,750,0,,79,136,,,,,,,,,,,,,FALSE
-144,Cathedral,Building,0,200,0,,,,,37,,,,,,,,,,FALSE
-145,Monastery,Building,0,150,0,,,,,44,,,,,,,,,,FALSE
-146,Mosque,Building,0,200,0,,,,,45,,,,,,,,,,FALSE
-147,Pagoda,Building,0,200,0,,,,,46,,,,,,,,,,FALSE
-148,International Space Station,Building,0,0,0,,157,,,,,,,,,,,,,FALSE
-149,World's Fair Exhibitor,International Project,175,0,0,,,,,,,,,,,,,,,FALSE
-150,World's Fair Groundbreaking Invention,International Project,350,0,0,,,,,,,,,,,,,,,FALSE
-151,World's Fair Hosted Fair,International Project,1401,0,0,,,,,,,,,,,,,,,FALSE
-152,International Games Parade of Nations,International Project,360,0,0,,,,,,,,,,,,,,,FALSE
-153,International Games Won Medals,International Project,720,0,0,,,,,,,,,,,,,,,FALSE
-154,International Games Hosted Games,International Project,2881,0,0,,,,,,,,,,,,,,,FALSE
-155,International Space Station Constructed Parts,International Project,425,0,0,,,,,,,,,,,,,,,FALSE
-156,International Space Station Crew on Board,International Project,850,0,0,,,,,,,,,,,,,,,FALSE
-157,International Space Station Mission Control,International Project,3401,0,0,,,,,,,,,,,,,,,FALSE
-158,Archaeologist,Civilian Unit,200,0,,42,54,,,,,,,,,,,,,FALSE
-159,Settler,Civilian Unit,106,0,,1,,,,,,,,,42,,,,,FALSE
-160,Work Boat,Civilian Unit,30,0,,6,,,,,,,,,,,,,,TRUE
-161,Worker,Civilian Unit,70,0,,1,,,,,,,,,,,,,,FALSE
-162,Inquisitor,Religious Unit,0,200,,,,,,,,,,,,,,,,FALSE
-163,Missionary,Religious Unit,0,200,,,,,,,,,,,,,,,,FALSE
-164,Caravan,Trade Unit,75,0,,3,,,,,,,,,,,,,,FALSE
-165,Cargo Ship,Trade Unit,100,0,,6,,,,,,,,,,,,,,TRUE
-166,Great Artist,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE
-167,Great Engineer,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE
-168,Great General,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE
-169,Khan,Great Person,0,1000,,,,,,,,27,168,,,,,,,FALSE
-170,Great Merchant,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE
-171,Merchant of Venice,Great Person,0,1000,,,,,,,,42,170,,,,,,,FALSE
-172,Great Scientist,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE
-173,Great Admiral,Great Person,0,1000,,,,,,,,,,,,,,,,TRUE
-174,Great Prophet,Great Person,0,200,,,,,,,,,,,,,,,,FALSE
-175,Great Musician,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE
-176,Great Writer,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE
-177,Archer,Ranged Unit,40,0,,4,,199,,,,,,,,5,2,7,,FALSE
-178,Atlatlist,Ranged Unit,36,0,,1,,199,,,,26,177,,,5,2,7,,FALSE
-179,Bowman,Ranged Unit,40,0,,4,,199,,,,6,177,,,7,2,9,,FALSE
-180,Slinger,Ranged Unit,40,0,,4,,199,,,,20,177,,,4,2,7,,FALSE
-181,Chariot Archer,Ranged Unit,56,0,,10,,222,,,9,,,,,6,2,10,,FALSE
-182,Hand-Axe,Ranged Unit,56,0,,10,,222,,,,44,181,,,9,1,9,,FALSE
-183,Horse Archer,Ranged Unit,56,0,,10,,222,,,,19,181,,,7,2,10,,FALSE
-184,War Chariot,Ranged Unit,56,0,,10,,222,,,,13,181,,,6,2,10,,FALSE
-185,War Elephant,Ranged Unit,70,0,,10,,222,,,,21,181,,,9,2,11,,FALSE
-186,Warrior,Melee Unit,40,0,,1,,203,,,,,,,,8,,,191,FALSE
-187,Jaguar,Melee Unit,40,0,,1,,203,,,,5,186,,,8,,,,FALSE
-188,Maori Warrior,Melee Unit,40,0,,1,,203,,,,33,186,,,8,,,,FALSE
-189,Scout,Melee Unit,25,0,,1,,,,,,,,,,5,,,177,FALSE
-190,Pathfinder,Melee Unit,45,0,,1,,,,,,37,189,,,8,,,199,FALSE
-191,Spearman,Melee Unit,56,0,,12,,219,,,,,,,,11,,,,FALSE
-192,Battering Ram,Melee Siege Unit,75,0,,12,,214,,,,19,191,,,10,,,,FALSE
-193,Hoplite,Melee Unit,56,0,,12,,219,,,,18,191,,,13,,,,FALSE
-194,Immortal,Melee Unit,56,0,,12,,219,,,,31,191,,,12,,,,FALSE
-195,Pictish Warrior,Melee Unit,56,0,,12,,219,,,,10,191,,,11,,,,FALSE
-196,Trireme,Melee Unit,45,0,,6,,240,,,,,,,,10,,,,TRUE
-197,Quinquereme,Melee Unit,45,0,,6,,240,,,,9,196,,,13,,,,TRUE
-198,Dromon,Ranged Unit,56,0,,6,,228,,,,8,196,,,8,2,10,,TRUE
-199,Composite Bowman,Ranged Unit,75,0,,16,,211,,,,,,,,7,2,11,,FALSE
-200,Catapult,Siege Weapon,75,0,,15,,214,,,,,,,,7,2,8,,FALSE
-201,Ballista,Siege Weapon,75,0,,15,,214,,,,35,200,,,8,2,10,,FALSE
-202,Siege Tower,Siege Weapon,75,0,,15,,214,,,,3,200,,,12,,,,FALSE
-203,Swordsman,Melee Unit,75,0,,21,,216,,,10,,,,,14,,,,FALSE
-204,Kris Swordsman,Melee Unit,,,,,,,,,10,,,,,,,,,FALSE
-205,Legion,Melee Unit,,,,,,,,,10,,,,,,,,,FALSE
-206,Mohawk Warrior,Melee Unit,,,,,,,,,,,,,,,,,,FALSE
-207,Horseman,Mounted Unit,,,,,,222,,,9,,,,,,,,,FALSE
-208,African Forest Elephant,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE
-209,Cataphract,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE
-210,Companion Cavalry,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE
-211,Crossbowman,Ranged Unit,,,,,,247,,,,,,,,,,,,FALSE
-212,Chu-ko-nu,Ranged Unit,,,,,,,,,,,,,,,,,,FALSE
-213,Longbowman,Ranged Unit,,,,,,,,,10,,,,,,,,,FALSE
-214,Trebuchet,Siege Weapon,,,,,,230,,,,,,,,,,,,FALSE
-215,Hwach'a,Siege Weapon,,,,,,,,,,,,,,,,,,FALSE
-216,Longswordsman,Melee Unit,,,,,,231,,,,,,,,,,,,FALSE
-217,Berserker,Melee Unit,,,,,,,,,10,,,,,,,,,FALSE
-218,Samurai,Melee Unit,,,,,,,,,10,,,,,,,,,FALSE
-219,Pikeman,Melee Unit,,,,,,236,,,,,,,,,,,,FALSE
-220,Impi,Melee Unit,,,,,,,,,,,,,,,,,,FALSE
-221,Landsknecht,Melee Unit,,,,,,,,,,,,,,,,,,FALSE
-222,Knight,Mounted Unit,,,,,,253,,,9,,,,,,,,,FALSE
-223,Camel Archer,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE
-224,Conquistador,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE
-225,Keshik,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE
-226,Mandekalu Cavalry,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE
-227,Naresuan's Elephant,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE
-228,Galleass,Ranged Unit,,,,,,245,,,,,,,,,,,,TRUE
-229,Great Galleass,Ranged Unit,,,,,,,,,,,,,,,,,,TRUE
-230,Cannon,Siege Weapon,,,,,,248,,,,,,,,,,,,FALSE
-231,Musketman,Gunpowder Unit,,,,,,249,,,,,,,,,,,,FALSE
-232,Janissary,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-233,Minuteman,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-234,Musketeer,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-235,Tercio,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-236,Lancer,Mounted Unit,,,,,,274,,,9,,,,,,,,,FALSE
-237,Hakkapeliitta,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE
-238,Sipahi,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE
-239,Winged Hussar,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE
-240,Caravel,Melee Unit,,,,,,258,,,,,,,,,,,,TRUE
-241,Nau,Melee Unit,,,,,,,,,,,,,,,,,,TRUE
-242,Turtle Ship,Melee Unit,,,,,,,,,,,,,,,,,,TRUE
-243,Privateer,Melee Unit,,,,,,265,,,,,,,,,,,,TRUE
-244,Sea Beggar,Melee Unit,,,,,,,,,,,,,,,,,,TRUE
-245,Frigate,Ranged Unit,,,,,,266,,,10,,,,,,,,,TRUE
-246,Ship of the Line,Ranged Unit,,,,,,,,,10,,,,,,,,,TRUE
-247,Gatling Gun,Ranged Unit,,,,,,259,,,,,,,,,,,,FALSE
-248,Artillery,Siege Weapon,,,,,,273,,,,,,,,,,,,FALSE
-249,Rifleman,Gunpowder Unit,,,,,,261,,,,,,,,,,,,FALSE
-250,Carolean,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-251,Mehal Sefari,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-252,Norwegian Ski Infantry,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-253,Cavalry,Mounted Unit,,,,,,269,,,9,,,,,,,,,FALSE
-254,Berber Cavalry,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE
-255,Comanche Riders,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE
-256,Cossack,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE
-257,Hussar,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE
-258,Ironclad,Melee Unit,,,,,,265,,,11,,,,,,,,,TRUE
-259,Machine Gun,Ranged Unit,,,,,,272,,,,,,,,,,,,FALSE
-260,Anti-Aircraft Gun,Gunpowder Unit,,,,,,276,,,,,,,,,,,,FALSE
-261,Great War Infantry,Gunpowder Unit,,,,,,263,,,,,,,,,,,,FALSE
-262,Foreign Legion,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-263,Infantry,Gunpowder Unit,,,,,,286,,,,,,,,,,,,FALSE
-264,Pracinha,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-265,Destroyer,Melee Unit,,,,,,,,,,,,,,,,,,TRUE
-266,Battleship,Ranged Unit,,,,,,,,,12,,,,,,,,,TRUE
-267,Carrier,Ranged Unit,,,,,,,,,,,,,,,,,,TRUE
-268,Submarine,Ranged Unit,,,,,,289,,,,,,,,,,,,TRUE
-269,Landship,Armored Unit,,,,,,278,,,12,,,,,,,,,FALSE
-270,Great War Bomber,Bomber Unit,,,,,,280,,,12,,,,,,,,,FALSE
-271,Triplane,Fighter Unit,,,,,,282,,,12,,,,,,,,,FALSE
-272,Bazooka,Ranged Unit,,,,,,,,,,,,,,,,,,FALSE
-273,Rocket Artillery,Siege Weapon,,,,,,,,,13,,,,,,,,,FALSE
-274,Anti-Tank Gun,Gunpowder Unit,,,,,,284,,,,,,,,,,,,FALSE
-275,Marine,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-276,Mobile SAM,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE
-277,Paratrooper,Gunpowder Unit,,,,,,287,,,,,,,,,,,,FALSE
-278,Tank,Armored Unit,,,,,,290,,,12,,,,,,,,,FALSE
-279,Panzer,Armored Unit,,,,,,,,,12,,,,,,,,,FALSE
-280,Bomber,Bomber Unit,,,,,,292,,,12,,,,,,,,,FALSE
-281,B17,Bomber Unit,,,,,,,,,12,,,,,,,,,FALSE
-282,Fighter,Fighter Unit,,,,,,293,,,12,,,,,,,,,FALSE
-283,Zero,Fighter Unit,,,,,,,,,,,,,,,,,,FALSE
-284,Helicopter Gunship,Helicopter Unit,,,,,,,,,13,,,,,,,,,FALSE
-285,Atomic Bomb,Bomb Unit,,,,,,,,,14,,,,,,,,,FALSE
-286,Mechanized Infantry,Gunpowder Unit,375,0,,70,,,,,,,,,,90,,,,FALSE
-287,XCOM Squad,Gunpowder Unit,400,0,,79,,,,,,,,,,100,,,,FALSE
-288,Missile Cruiser,Ranged Unit,425,0,,73,,,,,,,,,,80,3,100,,TRUE
-289,Nuclear Submarine,Ranged Unit,425,0,,69,,,,,,,,,,50,3,85,,TRUE
-290,Modern Armor,Armored Unit,425,0,,74,,291,,,13,,,,,100,,,,FALSE
-291,Giant Death Robot,Armored Unit,425,0,,78,,,,,14,,,,,150,,,,FALSE
-292,Stealth Bomber,Bomber Unit,425,0,,80,,,,,13,,,,,,20,85,,FALSE
-293,Jet Fighter,Fighter Unit,425,0,,74,,,,,13,,,,,,10,75,,FALSE
-294,Guided Missile,Bomb Unit,150,0,,71,,,,,,,,,,,8,60,,FALSE
-295,Nuclear Missile,Bomb Unit,1000,0,,71,137,,,,14,,,,,,12,,,FALSE
-296,Brute,Melee Unit,20,0,,,,203,,,,44,186,,,8,,,,FALSE
-297,Galley,Melee Unit,40,0,,,,196,,,,44,,,,7,,,,TRUE
+﻿buildableID,name,classification,costProductionPoints,costFaithPoints,maintenanceCostGold,dependsOnTechnologyID,dependsOnBuildableID,upgradesToBuildableID,dependsOnSocialPolicyID,dependsOnReligiousBeliefID,dependsOnResourceID,uniqueToCivilizationID,replacesBuildableID,disallowedWithBuildingID,disallowedWithCivilizationID,combatStrength,range,rangedStrength,ancientRuinsUpgradeToBuildableID,naval,buildable
+1,Monument,Building,40,0,1,1,,,,,,,,,,,,,,FALSE,TRUE
+2,Granary,Building,60,0,1,2,,,,,,,,,,,,,,FALSE,TRUE
+3,Library,Building,75,0,1,8,,,,,,,,,,,,,,FALSE,TRUE
+4,Shrine,Building,40,0,1,2,,,,,,,,,,,,,,FALSE,TRUE
+5,Water Mill,Building,75,0,2,10,,,,,,,,,,,,,,FALSE,TRUE
+6,Walls,Building,75,0,0,11,,,,,,,,,,,,,,FALSE,TRUE
+7,Stone Works,Building,75,0,1,7,,,,,8,,,,,,,,,FALSE,TRUE
+8,Circus,Building,75,0,0,9,,,,,9,,,,,,,,,FALSE,TRUE
+9,Barracks,Building,75,0,1,12,,,,,,,,,,,,,,FALSE,TRUE
+10,Ikanda,Building,75,0,1,12,,,,,,43,9,,,,,,,FALSE,TRUE
+11,Krepost,Building,75,0,1,12,,,,,,36,9,,,,,,,FALSE,TRUE
+12,Paper Maker,Building,75,0,0,8,,,,,,11,3,,,,,,,FALSE,TRUE
+13,Royal Library,Building,75,0,1,8,,,,,,3,3,,,,,,,FALSE,TRUE
+14,Stele,Building,40,0,1,1,,,,,,15,1,,,,,,,FALSE,TRUE
+15,Pyramid,Building,40,0,1,2,,,,,,26,4,,,,,,,FALSE,TRUE
+16,Walls of Babylon,Building,65,0,0,11,,,,,,6,6,,,,,,,FALSE,TRUE
+17,Floating Gardens,Building,75,0,1,10,,,,,,5,5,,,,,,,FALSE,TRUE
+18,Great Library,World Wonder,185,0,0,8,,,,,,,,,,,,,,FALSE,TRUE
+19,Mausoleum of Halicarnassus,World Wonder,185,0,0,11,,,,,,,,,,,,,,FALSE,TRUE
+20,Pyramids,World Wonder,185,0,0,11,,,2,,,,,,,,,,,FALSE,TRUE
+21,Statue of Zeus,World Wonder,185,0,0,12,,,3,,,,,,,,,,,FALSE,TRUE
+22,Stonehenge,World Wonder,185,0,0,7,,,,,,,,,,,,,,FALSE,TRUE
+23,Temple of Artemis,World Wonder,185,0,0,4,,,,,,,,,,,,,,FALSE,TRUE
+24,Palace,Capital Building,0,0,0,1,,,,,,,,,,,,,,FALSE,TRUE
+25,Amphitheater,Building,100,0,2,18,1,,,,,,,,,,,,,FALSE,TRUE
+26,Aqueduct,Building,100,0,1,20,,,,,,,,,,,,,,FALSE,TRUE
+27,Caravansary,Building,120,0,0,14,,,,,,,,,,,,,,FALSE,TRUE
+28,Colosseum,Building,100,0,1,16,,,,,,,,,,,,,,FALSE,TRUE
+29,Courthouse,Building,100,0,4,15,,,,,,,,,,,,,,FALSE,TRUE
+30,Lighthouse,Building,75,0,1,13,,,,,,,,,,,,,,TRUE,TRUE
+31,Market,Building,100,0,0,19,,,,,,,,,,,,,,FALSE,TRUE
+32,Bazaar,Building,100,0,0,19,,,,,,2,31,,,,,,,FALSE,TRUE
+33,Mint,Building,100,0,0,19,,,,,,,,,,,,,,FALSE,TRUE
+34,Stable,Building,100,0,1,14,,,,,9,,,,,,,,,FALSE,TRUE
+35,Ducal Stable,Building,75,0,0,14,,,,,,32,34,,,,,,,FALSE,TRUE
+36,Temple,Building,100,0,2,17,4,,,,,,,,,,,,,FALSE,TRUE
+37,Burial Tomb,Building,100,0,0,17,4,,,,,13,36,,,,,,,FALSE,TRUE
+38,Mud Pyramid Mosque,Building,100,0,0,17,4,,,,,39,36,,,,,,,FALSE,TRUE
+39,Colossus,World Wonder,185,0,0,21,,,,,,,,,,,,,,TRUE,TRUE
+40,Great Lighthouse,World Wonder,185,0,0,13,,,,,,,,,,,,,,TRUE,TRUE
+41,Great Wall,World Wonder,250,0,0,20,,,,,,,,,,,,,,FALSE,TRUE
+42,Hanging Gardens,World Wonder,250,0,0,15,,,1,,,,,,,,,,,FALSE,TRUE
+43,Oracle,World Wonder,250,0,0,17,,,,,,,,,,,,,,FALSE,TRUE
+44,Parthenon,World Wonder,250,0,0,18,,,,,,,,,,,,,,FALSE,TRUE
+45,Petra,World Wonder,250,0,0,19,,,,,,,,,,,,,,FALSE,TRUE
+46,Terracotta Army,World Wonder,250,0,0,16,,,,,,,,,,,,,,FALSE,TRUE
+47,Garden,Building,120,0,1,22,,,,,,,,,,,,,,FALSE,TRUE
+48,Armory,Building,160,0,1,31,9,,,,,,,,,,,,,FALSE,TRUE
+49,Castle,Building,160,0,0,28,6,,,,,,,,,,,,,FALSE,TRUE
+50,Mughal Fort,Building,150,0,0,28,6,,,,,21,49,,,,,,,FALSE,TRUE
+51,Forge,Building,120,0,1,25,,,,,10,,,,,,,,,FALSE,TRUE
+52,Candi,Building,120,0,1,22,,,,,,22,47,,,,,,,FALSE,TRUE
+53,Harbor,Building,120,0,2,26,,,,,,,,,,,,,,TRUE,TRUE
+54,University,Building,160,0,2,27,3,,,,,,,,,,,,,FALSE,TRUE
+55,Wat,Building,160,0,2,27,3,,,,,38,54,,,,,,,FALSE,TRUE
+56,Workshop,Building,120,0,2,25,,,,,,,,,,,,,,FALSE,TRUE
+57,Longhouse,Building,100,0,2,25,,,,,,23,56,,,,,,,FALSE,TRUE
+58,Alhambra,World Wonder,400,0,0,28,,,,,,,,,,,,,,FALSE,TRUE
+59,Angkor Wat,World Wonder,400,0,0,27,,,,,,,,,,,,,,FALSE,TRUE
+60,Borobudur,World Wonder,300,0,0,22,,,,,,,,,,,,,,FALSE,TRUE
+61,Chichen Itza,World Wonder,300,0,0,23,,,,,,,,,,,,,,FALSE,TRUE
+62,Great Mosque of Djenne,World Wonder,300,0,0,22,,,4,,,,,,,,,,,FALSE,TRUE
+63,Hagia Sophia,World Wonder,300,0,0,22,,,,,,,,,,,,,,FALSE,TRUE
+64,Machu Picchu,World Wonder,300,0,0,24,,,,,,,,,,,,,,FALSE,TRUE
+65,Notre Dame,World Wonder,400,0,0,30,,,,,,,,,,,,,,FALSE,TRUE
+66,Arsenal,Building,300,0,0,40,49,,,,,,,,,,,,,FALSE,TRUE
+67,Bank,Building,200,0,0,34,31,,,,,,,,,,,,,FALSE,TRUE
+68,Hanse,Building,200,0,0,34,31,,,,,17,67,,,,,,,FALSE,TRUE
+69,Satrap's Court,Building,200,0,0,34,31,,,,,31,67,,,,,,,FALSE,TRUE
+70,Constabulary,Building,160,0,1,34,,,,,,,,,,,,,,FALSE,TRUE
+71,Observatory,Building,200,0,0,32,,,,,,,,,,,,,,FALSE,TRUE
+72,Opera House,Building,200,0,1,33,25,,,,,,,,,,,,,FALSE,TRUE
+73,Ceilidh Hall,Building,200,0,1,33,25,,,,,10,72,,,,,,,FALSE,TRUE
+74,Seaport,Building,250,0,2,37,53,,,,,,,,,,,,,TRUE,TRUE
+75,National Epic,National Wonder,125,0,0,18,1,,,,,,,,,,,,,FALSE,TRUE
+76,Windmill,Building,250,0,2,39,,,,,,,,,,,,,,FALSE,TRUE
+77,Coffee House,Building,250,0,2,39,,,,,,4,76,,,,,,,FALSE,TRUE
+78,Zoo,Building,200,0,2,35,28,,,,,,,,,,,,,FALSE,TRUE
+79,Forbidden Palace,World Wonder,500,0,0,34,,,5,,,,,,,,,,,FALSE,TRUE
+80,Globe Theatre,World Wonder,500,0,0,35,,,,,,,,,,,,,,FALSE,TRUE
+81,Himeji Castle,World Wonder,500,0,0,36,,,,,,,,,,,,,,FALSE,TRUE
+82,Leaning Tower of Pisa,World Wonder,500,0,0,35,,,,,,,,,,,,,,FALSE,TRUE
+83,Porcelain Tower,World Wonder,625,0,0,38,,,9,,,,,,,,,,,FALSE,TRUE
+84,Red Fort,World Wonder,625,0,0,40,,,,,,,,,,,,,,FALSE,TRUE
+85,Sistine Chapel,World Wonder,500,0,0,33,,,,,,,,,,,,,,FALSE,TRUE
+86,Taj Mahal,World Wonder,625,0,0,38,,,,,,,,,,,,,,FALSE,TRUE
+87,Uffizi,World Wonder,625,0,0,38,,,6,,,,,,,,,,,FALSE,TRUE
+88,Factory,Building,360,0,3,44,56,,,,11,,,,,,,,,FALSE,TRUE
+89,Hospital,Building,360,0,2,48,26,,,,,,,,,,,,,FALSE,TRUE
+90,Hydro Plant,Building,360,0,3,49,,,,,13,,,,,,,,,FALSE,TRUE
+91,Military Academy,Building,300,0,1,46,48,,,,,,,,,,,,,FALSE,TRUE
+92,Museum,Building,300,0,3,42,72,,,,,,,,,,,,,FALSE,TRUE
+93,Police Station,Building,300,0,1,49,70,,,,,,,,,,,,,FALSE,TRUE
+94,Public School,Building,300,0,3,43,54,,,,,,,,,,,,,FALSE,TRUE
+95,Stock Exchange,Building,500,0,0,49,67,,,,,,,,,,,,,FALSE,TRUE
+96,Big Ben,World Wonder,750,0,0,44,,,7,,,,,,,,,,,FALSE,TRUE
+97,Brandenburg Gate,World Wonder,750,0,0,46,,,,,,,,,,,,,,FALSE,TRUE
+98,Louvre,World Wonder,750,0,0,42,,,8,,,,,,,,,,,FALSE,TRUE
+99,Broadcast Tower,Building,500,0,3,53,92,,,,,,,,,,,,,FALSE,TRUE
+100,Hotel,Building,300,0,0,52,,,,,,,,,,,,,,FALSE,TRUE
+101,Military Base,Building,500,0,0,54,66,,,,,,,,,,,,,FALSE,TRUE
+102,Research Lab,Building,500,0,3,57,94,,,,,,,,,,,,,FALSE,TRUE
+103,Stadium,Building,500,0,2,52,78,,,,,,,,,,,,,FALSE,TRUE
+104,Broadway,World Wonder,1060,0,0,53,,,,,,,,,,,,,,FALSE,TRUE
+105,Eiffel Tower,World Wonder,1060,0,0,53,,,,,,,,,,,,,,FALSE,TRUE
+106,Kremlin,World Wonder,1060,0,0,56,,,56,,,,,,,,,,,FALSE,TRUE
+107,Neuschwanstein,World Wonder,1060,0,0,56,,,,,,,,,,,,,,FALSE,TRUE
+108,Prora,World Wonder,1060,0,0,55,,,57,,,,,,,,,,,FALSE,TRUE
+109,Statue of Liberty,World Wonder,1060,0,0,54,,,55,,,,,,,,,,,FALSE,TRUE
+110,Cristo Redentor,World Wonder,1250,0,0,57,,,,,,,,,,,,,,FALSE,TRUE
+111,Airport,Building,250,0,5,63,,,,,,,,,,,,,,FALSE,TRUE
+112,Medical Lab,Building,500,0,3,61,89,,,,,,,,,,,,,FALSE,TRUE
+113,Nuclear Plant,Building,500,0,3,66,88,,,,14,,,115,,,,,,FALSE,TRUE
+114,Recycling Center,Building,500,0,3,65,,,,,,,,,,,,,,FALSE,TRUE
+115,Solar Plant,Building,500,0,3,65,88,,,,,,,113,,,,,,FALSE,TRUE
+116,Great Firewall,World Wonder,1250,0,0,68,,,,,,,,,,,,,,FALSE,TRUE
+117,Pentagon,World Wonder,1250,0,0,64,,,,,,,,,,,,,,FALSE,TRUE
+118,Sydney Opera House,World Wonder,1250,0,0,65,,,,,,,,,,,,,,TRUE,TRUE
+119,Bomb Shelter,Building,300,0,1,69,,,,,,,,,,,,,,FALSE,TRUE
+120,Spaceship Factory,Building,360,0,3,73,88,,,,13,,,,,,,,,FALSE,TRUE
+121,CN Tower,World Wonder,1250,0,0,69,,,,,,,,,,,,,,FALSE,TRUE
+122,Hubble Space Telescope,World Wonder,1250,0,0,72,,,,,,,,,,,,,,FALSE,TRUE
+123,Circus Maximus,National Wonder,125,0,0,14,28,,,,,,,,,,,,,FALSE,TRUE
+124,East India Company,National Wonder,125,0,0,24,31,,,,,,,,,,,,,FALSE,TRUE
+125,Grand Temple,National Wonder,125,0,0,22,36,,,,,,,,,,,,,FALSE,TRUE
+126,Hermitage,National Wonder,125,0,0,38,72,,,,,,,,,,,,,FALSE,TRUE
+127,Heroic Epic,National Wonder,125,0,0,21,9,,,,,,,,,,,,,FALSE,TRUE
+128,Ironworks,National Wonder,125,0,0,29,56,,,,,,,,,,,,,FALSE,TRUE
+129,National College,National Wonder,125,0,0,17,3,,,,,,,,,,,,,FALSE,TRUE
+130,National Intelligence Agency,National Wonder,125,0,0,53,93,,,,,,,,,,,,,FALSE,TRUE
+131,Natural Visitor Center,National Wonder,400,0,0,69,100,,,,,,,,,,,,,FALSE,TRUE
+132,Oxford University,National Wonder,125,0,0,27,54,,,,,,,,,,,,,FALSE,TRUE
+133,Artists' Guild,Guild,150,0,1,24,,,,,,,,,,,,,,FALSE,TRUE
+134,Musicians' Guild,Guild,200,0,1,33,,,,,,,,,,,,,,FALSE,TRUE
+135,Writers' Guild,Guild,100,0,1,18,,,,,,,,,,,,,,FALSE,TRUE
+136,Apollo Program,Project,750,0,,67,,,,,,,,,,,,,,FALSE,TRUE
+137,Manhattan Project,Project,750,0,,62,,,,,,,,,,,,,,FALSE,TRUE
+138,Spaceship Booster 1,Project,750,0,,71,136,,,,,,,,,,,,,FALSE,TRUE
+139,Spaceship Booster 2,Project,750,0,,71,136,,,,,,,,,,,,,FALSE,TRUE
+140,Spaceship Booster 3,Project,750,0,,71,136,,,,,,,,,,,,,FALSE,TRUE
+141,Spaceship Cockpit,Project,750,0,,72,136,,,,,,,,,,,,,FALSE,TRUE
+142,Spaceship Engine,Project,750,0,,77,136,,,,,,,,,,,,,FALSE,TRUE
+143,Spaceship Stasis Chamber,Project,750,0,,79,136,,,,,,,,,,,,,FALSE,TRUE
+144,Cathedral,Building,0,200,0,,,,,37,,,,,,,,,,FALSE,TRUE
+145,Monastery,Building,0,150,0,,,,,44,,,,,,,,,,FALSE,TRUE
+146,Mosque,Building,0,200,0,,,,,45,,,,,,,,,,FALSE,TRUE
+147,Pagoda,Building,0,200,0,,,,,46,,,,,,,,,,FALSE,TRUE
+148,International Space Station,Building,0,0,0,,157,,,,,,,,,,,,,FALSE,TRUE
+149,World's Fair Exhibitor,International Project,175,0,0,,,,,,,,,,,,,,,FALSE,TRUE
+150,World's Fair Groundbreaking Invention,International Project,350,0,0,,,,,,,,,,,,,,,FALSE,TRUE
+151,World's Fair Hosted Fair,International Project,1401,0,0,,,,,,,,,,,,,,,FALSE,TRUE
+152,International Games Parade of Nations,International Project,360,0,0,,,,,,,,,,,,,,,FALSE,TRUE
+153,International Games Won Medals,International Project,720,0,0,,,,,,,,,,,,,,,FALSE,TRUE
+154,International Games Hosted Games,International Project,2881,0,0,,,,,,,,,,,,,,,FALSE,TRUE
+155,International Space Station Constructed Parts,International Project,425,0,0,,,,,,,,,,,,,,,FALSE,TRUE
+156,International Space Station Crew on Board,International Project,850,0,0,,,,,,,,,,,,,,,FALSE,TRUE
+157,International Space Station Mission Control,International Project,3401,0,0,,,,,,,,,,,,,,,FALSE,TRUE
+158,Archaeologist,Civilian Unit,200,0,,42,54,,,,,,,,,,,,,FALSE,TRUE
+159,Settler,Civilian Unit,106,0,,1,,,,,,,,,42,,,,,FALSE,TRUE
+160,Work Boat,Civilian Unit,30,0,,6,,,,,,,,,,,,,,TRUE,TRUE
+161,Worker,Civilian Unit,70,0,,1,,,,,,,,,,,,,,FALSE,TRUE
+162,Inquisitor,Religious Unit,0,200,,,,,,,,,,,,,,,,FALSE,TRUE
+163,Missionary,Religious Unit,0,200,,,,,,,,,,,,,,,,FALSE,TRUE
+164,Caravan,Trade Unit,75,0,,3,,,,,,,,,,,,,,FALSE,TRUE
+165,Cargo Ship,Trade Unit,100,0,,6,,,,,,,,,,,,,,TRUE,TRUE
+166,Great Artist,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE,TRUE
+167,Great Engineer,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE,TRUE
+168,Great General,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE,TRUE
+169,Khan,Great Person,0,1000,,,,,,,,27,168,,,,,,,FALSE,TRUE
+170,Great Merchant,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE,TRUE
+171,Merchant of Venice,Great Person,0,1000,,,,,,,,42,170,,,,,,,FALSE,TRUE
+172,Great Scientist,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE,TRUE
+173,Great Admiral,Great Person,0,1000,,,,,,,,,,,,,,,,TRUE,TRUE
+174,Great Prophet,Great Person,0,200,,,,,,,,,,,,,,,,FALSE,TRUE
+175,Great Musician,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE,TRUE
+176,Great Writer,Great Person,0,1000,,,,,,,,,,,,,,,,FALSE,TRUE
+177,Archer,Ranged Unit,40,0,,4,,199,,,,,,,,5,2,7,,FALSE,TRUE
+178,Atlatlist,Ranged Unit,36,0,,1,,199,,,,26,177,,,5,2,7,,FALSE,TRUE
+179,Bowman,Ranged Unit,40,0,,4,,199,,,,6,177,,,7,2,9,,FALSE,TRUE
+180,Slinger,Ranged Unit,40,0,,4,,199,,,,20,177,,,4,2,7,,FALSE,TRUE
+181,Chariot Archer,Ranged Unit,56,0,,10,,222,,,9,,,,,6,2,10,,FALSE,TRUE
+182,Hand-Axe,Ranged Unit,56,0,,10,,222,,,,44,181,,,9,1,9,,FALSE,FALSE
+183,Horse Archer,Ranged Unit,56,0,,10,,222,,,,19,181,,,7,2,10,,FALSE,TRUE
+184,War Chariot,Ranged Unit,56,0,,10,,222,,,,13,181,,,6,2,10,,FALSE,TRUE
+185,War Elephant,Ranged Unit,70,0,,10,,222,,,,21,181,,,9,2,11,,FALSE,TRUE
+186,Warrior,Melee Unit,40,0,,1,,203,,,,,,,,8,,,191,FALSE,TRUE
+187,Jaguar,Melee Unit,40,0,,1,,203,,,,5,186,,,8,,,,FALSE,TRUE
+188,Maori Warrior,Melee Unit,40,0,,1,,203,,,,33,186,,,8,,,,FALSE,TRUE
+189,Scout,Melee Unit,25,0,,1,,,,,,,,,,5,,,177,FALSE,TRUE
+190,Pathfinder,Melee Unit,45,0,,1,,,,,,37,189,,,8,,,199,FALSE,TRUE
+191,Spearman,Melee Unit,56,0,,12,,219,,,,,,,,11,,,,FALSE,TRUE
+192,Battering Ram,Melee Siege Unit,75,0,,12,,214,,,,19,191,,,10,,,,FALSE,TRUE
+193,Hoplite,Melee Unit,56,0,,12,,219,,,,18,191,,,13,,,,FALSE,TRUE
+194,Immortal,Melee Unit,56,0,,12,,219,,,,31,191,,,12,,,,FALSE,TRUE
+195,Pictish Warrior,Melee Unit,56,0,,12,,219,,,,10,191,,,11,,,,FALSE,TRUE
+196,Trireme,Melee Unit,45,0,,6,,240,,,,,,,,10,,,,TRUE,TRUE
+197,Quinquereme,Melee Unit,45,0,,6,,240,,,,9,196,,,13,,,,TRUE,TRUE
+198,Dromon,Ranged Unit,56,0,,6,,228,,,,8,196,,,8,2,10,,TRUE,TRUE
+199,Composite Bowman,Ranged Unit,75,0,,16,,211,,,,,,,,7,2,11,,FALSE,TRUE
+200,Catapult,Siege Weapon,75,0,,15,,214,,,,,,,,7,2,8,,FALSE,TRUE
+201,Ballista,Siege Weapon,75,0,,15,,214,,,,35,200,,,8,2,10,,FALSE,TRUE
+202,Siege Tower,Siege Weapon,75,0,,15,,214,,,,3,200,,,12,,,,FALSE,TRUE
+203,Swordsman,Melee Unit,75,0,,21,,216,,,10,,,,,14,,,,FALSE,TRUE
+204,Kris Swordsman,Melee Unit,75,0,,21,,216,,,10,22,203,,,14,,,,FALSE,TRUE
+205,Legion,Melee Unit,75,0,,21,,216,,,10,35,203,,,17,,,,FALSE,TRUE
+206,Mohawk Warrior,Melee Unit,75,0,,21,,216,,,,23,203,,,14,,,,FALSE,TRUE
+207,Horseman,Mounted Unit,75,0,,14,,222,,,9,,,,,12,,,,FALSE,TRUE
+208,African Forest Elephant,Mounted Unit,100,0,,14,,222,,,,9,207,,,14,,,,FALSE,TRUE
+209,Cataphract,Mounted Unit,75,0,,14,,222,,,9,8,207,,,15,,,,FALSE,TRUE
+210,Companion Cavalry,Mounted Unit,75,0,,14,,222,,,9,18,207,,,14,,,,FALSE,TRUE
+211,Crossbowman,Ranged Unit,120,0,,29,,247,,,,,,,,13,2,18,,FALSE,TRUE
+212,Chu-ko-nu,Ranged Unit,120,0,,29,,247,,,,11,211,,,13,2,14,,FALSE,TRUE
+213,Longbowman,Ranged Unit,120,0,,29,,247,,,,14,211,,,13,3,18,,FALSE,TRUE
+214,Trebuchet,Siege Weapon,120,0,,30,,230,,,,,,,,12,2,14,,FALSE,TRUE
+215,Hwach'a,Siege Weapon,120,0,,30,,230,,,,25,214,,,11,2,26,,FALSE,TRUE
+216,Longswordsman,Melee Unit,120,0,,31,,231,,,10,,,,,21,,,,FALSE,TRUE
+217,Berserker,Melee Unit,120,0,,25,,231,,,10,12,216,,,21,,,,FALSE,TRUE
+218,Samurai,Melee Unit,120,0,,31,,249,,,10,24,216,,,21,,,,FALSE,TRUE
+219,Pikeman,Melee Unit,90,0,,23,,236,,,,,,,,16,,,,FALSE,TRUE
+220,Impi,Melee Unit,90,0,,23,,249,,,,43,219,,,16,,,,FALSE,TRUE
+221,Landsknecht,Melee Unit,45,0,,23,,236,,,,,,,,16,,,,FALSE,FALSE
+222,Knight,Mounted Unit,,,,,,253,,,9,,,,,,,,,FALSE,TRUE
+223,Camel Archer,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
+224,Conquistador,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
+225,Keshik,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
+226,Mandekalu Cavalry,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
+227,Naresuan's Elephant,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+228,Galleass,Ranged Unit,,,,,,245,,,,,,,,,,,,TRUE,TRUE
+229,Great Galleass,Ranged Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
+230,Cannon,Siege Weapon,,,,,,248,,,,,,,,,,,,FALSE,TRUE
+231,Musketman,Gunpowder Unit,,,,,,249,,,,,,,,,,,,FALSE,TRUE
+232,Janissary,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+233,Minuteman,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+234,Musketeer,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+235,Tercio,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+236,Lancer,Mounted Unit,,,,,,274,,,9,,,,,,,,,FALSE,TRUE
+237,Hakkapeliitta,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
+238,Sipahi,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
+239,Winged Hussar,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
+240,Caravel,Melee Unit,,,,,,258,,,,,,,,,,,,TRUE,TRUE
+241,Nau,Melee Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
+242,Turtle Ship,Melee Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
+243,Privateer,Melee Unit,,,,,,265,,,,,,,,,,,,TRUE,TRUE
+244,Sea Beggar,Melee Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
+245,Frigate,Ranged Unit,,,,,,266,,,10,,,,,,,,,TRUE,TRUE
+246,Ship of the Line,Ranged Unit,,,,,,,,,10,,,,,,,,,TRUE,TRUE
+247,Gatling Gun,Ranged Unit,,,,,,259,,,,,,,,,,,,FALSE,TRUE
+248,Artillery,Siege Weapon,,,,,,273,,,,,,,,,,,,FALSE,TRUE
+249,Rifleman,Gunpowder Unit,,,,,,261,,,,,,,,,,,,FALSE,TRUE
+250,Carolean,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+251,Mehal Sefari,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+252,Norwegian Ski Infantry,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+253,Cavalry,Mounted Unit,,,,,,269,,,9,,,,,,,,,FALSE,TRUE
+254,Berber Cavalry,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+255,Comanche Riders,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+256,Cossack,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
+257,Hussar,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+258,Ironclad,Melee Unit,,,,,,265,,,11,,,,,,,,,TRUE,TRUE
+259,Machine Gun,Ranged Unit,,,,,,272,,,,,,,,,,,,FALSE,TRUE
+260,Anti-Aircraft Gun,Gunpowder Unit,,,,,,276,,,,,,,,,,,,FALSE,TRUE
+261,Great War Infantry,Gunpowder Unit,,,,,,263,,,,,,,,,,,,FALSE,TRUE
+262,Foreign Legion,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+263,Infantry,Gunpowder Unit,,,,,,286,,,,,,,,,,,,FALSE,TRUE
+264,Pracinha,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+265,Destroyer,Melee Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
+266,Battleship,Ranged Unit,,,,,,,,,12,,,,,,,,,TRUE,TRUE
+267,Carrier,Ranged Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
+268,Submarine,Ranged Unit,,,,,,289,,,,,,,,,,,,TRUE,TRUE
+269,Landship,Armored Unit,,,,,,278,,,12,,,,,,,,,FALSE,TRUE
+270,Great War Bomber,Bomber Unit,,,,,,280,,,12,,,,,,,,,FALSE,TRUE
+271,Triplane,Fighter Unit,,,,,,282,,,12,,,,,,,,,FALSE,TRUE
+272,Bazooka,Ranged Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+273,Rocket Artillery,Siege Weapon,,,,,,,,,13,,,,,,,,,FALSE,TRUE
+274,Anti-Tank Gun,Gunpowder Unit,,,,,,284,,,,,,,,,,,,FALSE,TRUE
+275,Marine,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+276,Mobile SAM,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+277,Paratrooper,Gunpowder Unit,,,,,,287,,,,,,,,,,,,FALSE,TRUE
+278,Tank,Armored Unit,,,,,,290,,,12,,,,,,,,,FALSE,TRUE
+279,Panzer,Armored Unit,,,,,,,,,12,,,,,,,,,FALSE,TRUE
+280,Bomber,Bomber Unit,,,,,,292,,,12,,,,,,,,,FALSE,TRUE
+281,B17,Bomber Unit,,,,,,,,,12,,,,,,,,,FALSE,TRUE
+282,Fighter,Fighter Unit,,,,,,293,,,12,,,,,,,,,FALSE,TRUE
+283,Zero,Fighter Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+284,Helicopter Gunship,Helicopter Unit,,,,,,,,,13,,,,,,,,,FALSE,TRUE
+285,Atomic Bomb,Bomb Unit,,,,,,,,,14,,,,,,,,,FALSE,TRUE
+286,Mechanized Infantry,Gunpowder Unit,375,0,,70,,,,,,,,,,90,,,,FALSE,TRUE
+287,XCOM Squad,Gunpowder Unit,400,0,,79,,,,,,,,,,100,,,,FALSE,TRUE
+288,Missile Cruiser,Ranged Unit,425,0,,73,,,,,,,,,,80,3,100,,TRUE,TRUE
+289,Nuclear Submarine,Ranged Unit,425,0,,69,,,,,,,,,,50,3,85,,TRUE,TRUE
+290,Modern Armor,Armored Unit,425,0,,74,,291,,,13,,,,,100,,,,FALSE,TRUE
+291,Giant Death Robot,Armored Unit,425,0,,78,,,,,14,,,,,150,,,,FALSE,TRUE
+292,Stealth Bomber,Bomber Unit,425,0,,80,,,,,13,,,,,,20,85,,FALSE,TRUE
+293,Jet Fighter,Fighter Unit,425,0,,74,,,,,13,,,,,,10,75,,FALSE,TRUE
+294,Guided Missile,Bomb Unit,150,0,,71,,,,,,,,,,,8,60,,FALSE,TRUE
+295,Nuclear Missile,Bomb Unit,1000,0,,71,137,,,,14,,,,,,12,,,FALSE,TRUE
+296,Brute,Melee Unit,20,0,,,,203,,,,44,186,,,8,,,,FALSE,FALSE
+297,Galley,Melee Unit,40,0,,,,196,,,,44,,,,7,,,,TRUE,FALSE
