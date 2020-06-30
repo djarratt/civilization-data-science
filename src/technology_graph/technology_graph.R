@@ -13,6 +13,7 @@ effect = read_csv("../../data/raw/effect.csv")
 improvement = read_csv("../../data/raw/improvement.csv")
 resource = read_csv("../../data/raw/resource.csv")
 terrain = read_csv("../../data/raw/terrain.csv")
+civilization = read_csv("../../data/raw/civilization.csv")
 technology_dependency = read_csv("../../data/raw/technologyDependency.csv")
 resource_improvement = read_csv("../../data/raw/resourceImprovement.csv")
 terrain_improvement = read_csv("../../data/raw/terrainImprovement.csv")
@@ -49,6 +50,29 @@ resource_terrain_graph = resource_terrain %>%
   inner_join(resource %>% rename(to = name), by = "resourceID") %>%
   inner_join(terrain %>% rename(from = name), by = "terrainID") %>%
   select(from, to)
+
+civilization_graph = civilization %>%
+  inner_join(buildable %>%
+               filter(!is.na(uniqueToCivilizationID)) %>%
+               rename(to = name),
+             by = c("civilizationID" = "uniqueToCivilizationID")) %>%
+  select(from = name, to) %>%
+  bind_rows(
+    civilization %>%
+      inner_join(improvement %>%
+                   filter(!is.na(uniqueToCivilizationID)) %>%
+                   rename(to = name),
+                 by = c("civilizationID" = "uniqueToCivilizationID")) %>%
+      select(from = name, to)
+  ) %>%
+  bind_rows(
+    civilization %>%
+      inner_join(resource %>%
+                   filter(!is.na(uniqueToCivilizationID)) %>%
+                   rename(to = name),
+                 by = c("civilizationID" = "uniqueToCivilizationID")) %>%
+      select(from = name, to)
+  )
 
 buildable_graph = buildable %>%
   filter(!is.na(dependsOnBuildableID)) %>%
@@ -119,7 +143,8 @@ graph_data = technology_graph %>%
   bind_rows(resource_graph) %>%
   bind_rows(resource_improvement_graph) %>%
   bind_rows(terrain_improvement_graph) %>%
-  bind_rows(resource_terrain_graph)
+  bind_rows(resource_terrain_graph) %>%
+  bind_rows(civilization_graph)
 graph_data_dense = graph_data %>%
   select(from = to, to = from)  # we want direction of centrality importance
                                 # to flow backwards in time
@@ -131,19 +156,25 @@ graph_tbl_with_metrics = graph_tbl %>%
     pagerank = centrality_pagerank(),
     eigen = centrality_eigen(),
     community_infomap = as.factor(group_infomap())
-  )
+  ) %>%
+  group_by(community_infomap) %>%
+  mutate(community_size = n()) %>%
+  ungroup()
 centrality_scores = data.frame(eigen = graph_tbl_with_metrics %>% activate(nodes) %>% pull(eigen),
                                pagerank = graph_tbl_with_metrics %>% activate(nodes) %>% pull(pagerank),
+                               community = graph_tbl_with_metrics %>% activate(nodes) %>% pull(community_infomap),
                                name = graph_tbl_with_metrics %>% activate(nodes) %>% pull(pagerank) %>% names())
 ggplot(centrality_scores %>%
          filter(eigen > 0.01 | pagerank > 0.01),
-       aes(log(eigen), log(pagerank), label = name)) +
+       aes(log(eigen), log(pagerank), label = name, color = community)) +
   geom_point() + geom_text(angle = 45)
 
 # igraph_layouts <- c('star', 'circle', 'gem', 'dh', 'graphopt', 'grid', 'mds', 'randomly', 'fr', 'kk', 'drl', 'lgl')
 # filter(community_infomap > 0)
-ggraph(graph_tbl_with_metrics, layout = 'auto') +   # 'fr' works well, 'stress' too
+ggraph(graph_tbl_with_metrics %>% filter(community_size > 15),
+       layout = 'auto') +   # 'fr' works well, 'stress' too
   geom_edge_link() +
   geom_node_text(aes(label = name, color = community_infomap)) +
   theme_graph() +
+  #facet_nodes(~community_infomap) +
   theme(legend.position = "none")
