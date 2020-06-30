@@ -3,12 +3,20 @@ This repo contains data and scripts for analysis of Sid Meier's Civilization V, 
 
 This repo is a work in progress. Civ V is a complex game and it will take me a while to structure its metadata in a manner appropriate for data science scripts to use.
 
+## Acknowledgements
+
 ### Data structure
 The data structures that make up this repo are akin to a SQL database in third normal form, though implemented in CSV for ease of version control, transparency, and interoperability.
 
 The specific structures are inspired by Civilization V's design, but are my own work.
 
 Table row order has no meaning, unless there is a sequence column or another column to indicate order or spatial information.
+
+### Data source
+
+The original data source is Sid Meier's Civilization V game by Firaxis ([official site](https://civilization.com/civilization-5/); [Wikipedia article](https://en.wikipedia.org/wiki/Civilization_V)).
+
+This dataset uses information organized at the [Civilization V wiki](https://civilization.fandom.com/wiki/Civilization_V) at [Fandom](https://www.fandom.com/) and is licensed under the [Creative Commons Attribution-Share Alike License](https://creativecommons.org/licenses/by-sa/3.0/).
 
 ### Repository structure
 This repo's structure is inspired by https://github.com/drivendata/cookiecutter-data-science.
