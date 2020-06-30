@@ -5,6 +5,7 @@
 require(tidyverse)
 require(tidygraph)
 require(ggraph)
+require(ggrepel)
 
 technology = read_csv("../../data/raw/technology.csv")
 buildable = read_csv("../../data/raw/buildable.csv")
@@ -131,9 +132,12 @@ graph_tbl_with_metrics = graph_tbl %>%
     eigen = centrality_eigen(),
     community_infomap = as.factor(group_infomap())
   )
-eigen = data.frame(centrality = graph_tbl_with_metrics %>% activate(nodes) %>% pull(eigen))
-eigen$y = rnorm(nrow(eigen))
-ggplot(eigen, aes(centrality, y, label = rownames(eigen))) +
+centrality_scores = data.frame(eigen = graph_tbl_with_metrics %>% activate(nodes) %>% pull(eigen),
+                               pagerank = graph_tbl_with_metrics %>% activate(nodes) %>% pull(pagerank),
+                               name = graph_tbl_with_metrics %>% activate(nodes) %>% pull(pagerank) %>% names())
+ggplot(centrality_scores %>%
+         filter(eigen > 0.01 | pagerank > 0.01),
+       aes(log(eigen), log(pagerank), label = name)) +
   geom_point() + geom_text(angle = 45)
 
 # igraph_layouts <- c('star', 'circle', 'gem', 'dh', 'graphopt', 'grid', 'mds', 'randomly', 'fr', 'kk', 'drl', 'lgl')
