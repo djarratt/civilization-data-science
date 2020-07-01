@@ -220,20 +220,20 @@
 219,Pikeman,Melee Unit,90,0,,23,,236,,,,,,,,16,,,,FALSE,TRUE
 220,Impi,Melee Unit,90,0,,23,,249,,,,43,219,,,16,,,,FALSE,TRUE
 221,Landsknecht,Melee Unit,45,0,,23,,236,,,,,,,,16,,,,FALSE,FALSE
-222,Knight,Mounted Unit,,,,,,253,,,9,,,,,,,,,FALSE,TRUE
-223,Camel Archer,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
-224,Conquistador,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
-225,Keshik,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
-226,Mandekalu Cavalry,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
-227,Naresuan's Elephant,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-228,Galleass,Ranged Unit,,,,,,245,,,,,,,,,,,,TRUE,TRUE
-229,Great Galleass,Ranged Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
-230,Cannon,Siege Weapon,,,,,,248,,,,,,,,,,,,FALSE,TRUE
-231,Musketman,Gunpowder Unit,,,,,,249,,,,,,,,,,,,FALSE,TRUE
-232,Janissary,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-233,Minuteman,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-234,Musketeer,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-235,Tercio,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+222,Knight,Mounted Unit,120,0,,28,,253,,,9,,,,,20,,,,FALSE,TRUE
+223,Camel Archer,Mounted Unit,120,0,,28,,253,,,9,2,222,,,17,2,21,,FALSE,TRUE
+224,Conquistador,Mounted Unit,135,0,,28,,253,,,9,40,222,,,20,,,,FALSE,TRUE
+225,Keshik,Mounted Unit,120,0,,28,,253,,,9,27,222,,,15,2,16,,FALSE,TRUE
+226,Mandekalu Cavalry,Mounted Unit,110,0,,28,,253,,,9,39,222,,,20,,,,FALSE,TRUE
+227,Naresuan's Elephant,Mounted Unit,120,0,,28,,253,,,,38,222,,,25,,,,FALSE,TRUE
+228,Galleass,Ranged Unit,100,0,,26,,245,,,,,,,,16,2,17,,TRUE,TRUE
+229,Great Galleass,Ranged Unit,110,0,,26,,245,,,,42,228,,,18,2,20,,TRUE,TRUE
+230,Cannon,Siege Weapon,185,0,,41,,248,,,,,,,,14,2,20,,FALSE,TRUE
+231,Musketman,Gunpowder Unit,150,0,,36,,249,,,,,,,,24,,,,FALSE,TRUE
+232,Janissary,Gunpowder Unit,150,0,,36,,249,,,,30,231,,,24,,,,FALSE,TRUE
+233,Minuteman,Gunpowder Unit,150,0,,36,,249,,,,1,231,,,24,,,,FALSE,TRUE
+234,Musketeer,Gunpowder Unit,150,0,,36,,249,,,,16,231,,,28,,,,FALSE,TRUE
+235,Tercio,Gunpowder Unit,160,0,,36,,249,,,,40,231,,,26,,,,FALSE,TRUE
 236,Lancer,Mounted Unit,,,,,,274,,,9,,,,,,,,,FALSE,TRUE
 237,Hakkapeliitta,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
 238,Sipahi,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
@@ -263,27 +263,27 @@
 262,Foreign Legion,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
 263,Infantry,Gunpowder Unit,,,,,,286,,,,,,,,,,,,FALSE,TRUE
 264,Pracinha,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-265,Destroyer,Melee Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
-266,Battleship,Ranged Unit,,,,,,,,,12,,,,,,,,,TRUE,TRUE
-267,Carrier,Ranged Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
-268,Submarine,Ranged Unit,,,,,,289,,,,,,,,,,,,TRUE,TRUE
-269,Landship,Armored Unit,,,,,,278,,,12,,,,,,,,,FALSE,TRUE
-270,Great War Bomber,Bomber Unit,,,,,,280,,,12,,,,,,,,,FALSE,TRUE
-271,Triplane,Fighter Unit,,,,,,282,,,12,,,,,,,,,FALSE,TRUE
-272,Bazooka,Ranged Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-273,Rocket Artillery,Siege Weapon,,,,,,,,,13,,,,,,,,,FALSE,TRUE
-274,Anti-Tank Gun,Gunpowder Unit,,,,,,284,,,,,,,,,,,,FALSE,TRUE
-275,Marine,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-276,Mobile SAM,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-277,Paratrooper,Gunpowder Unit,,,,,,287,,,,,,,,,,,,FALSE,TRUE
-278,Tank,Armored Unit,,,,,,290,,,12,,,,,,,,,FALSE,TRUE
-279,Panzer,Armored Unit,,,,,,,,,12,,,,,,,,,FALSE,TRUE
-280,Bomber,Bomber Unit,,,,,,292,,,12,,,,,,,,,FALSE,TRUE
-281,B17,Bomber Unit,,,,,,,,,12,,,,,,,,,FALSE,TRUE
-282,Fighter,Fighter Unit,,,,,,293,,,12,,,,,,,,,FALSE,TRUE
-283,Zero,Fighter Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-284,Helicopter Gunship,Helicopter Unit,,,,,,,,,13,,,,,,,,,FALSE,TRUE
-285,Atomic Bomb,Bomb Unit,,,,,,,,,14,,,,,,,,,FALSE,TRUE
+265,Destroyer,Melee Unit,375,0,,60,,,,,,,,,,55,,,,TRUE,TRUE
+266,Battleship,Ranged Unit,375,0,,58,,,,,12,,,,,55,3,65,,TRUE,TRUE
+267,Carrier,Ranged Unit,375,0,,58,,,,,,,,,,40,,,,TRUE,TRUE
+268,Submarine,Ranged Unit,325,0,,52,,289,,,,,,,,35,2,60,,TRUE,TRUE
+269,Landship,Armored Unit,350,0,,60,,278,,,12,,,,,60,,,,FALSE,TRUE
+270,Great War Bomber,Bomber Unit,325,0,,55,,280,,,12,,,,,,6,50,,FALSE,TRUE
+271,Triplane,Fighter Unit,325,0,,55,,282,,,12,,,,,,5,35,,FALSE,TRUE
+272,Bazooka,Ranged Unit,375,0,,66,,,,,,,,,,85,1,85,,FALSE,TRUE
+273,Rocket Artillery,Siege Weapon,425,0,,67,,,,,13,,,,,45,3,60,,FALSE,TRUE
+274,Anti-Tank Gun,Gunpowder Unit,300,0,,64,,284,,,,,,,,50,,,,FALSE,TRUE
+275,Marine,Gunpowder Unit,400,0,,61,,,,,,,,,,65,,,,FALSE,TRUE
+276,Mobile SAM,Gunpowder Unit,425,0,,67,,,,,,,,,,65,2,,,FALSE,TRUE
+277,Paratrooper,Gunpowder Unit,375,0,,63,,287,,,,,,,,65,,,,FALSE,TRUE
+278,Tank,Armored Unit,375,0,,64,,290,,,12,,,,,70,,,,FALSE,TRUE
+279,Panzer,Armored Unit,375,0,,64,,290,,,12,17,278,,,80,,,,FALSE,TRUE
+280,Bomber,Bomber Unit,375,0,,63,,292,,,12,,,,,,10,65,,FALSE,TRUE
+281,B17,Bomber Unit,375,0,,63,,292,,,12,1,280,,,,10,70,,FALSE,TRUE
+282,Fighter,Fighter Unit,375,0,,63,,293,,,12,,,,,,8,45,,FALSE,TRUE
+283,Zero,Fighter Unit,375,0,,63,,293,,,,24,282,,,,8,45,,FALSE,TRUE
+284,Helicopter Gunship,Helicopter Unit,425,0,,68,,,,,13,,,,,60,,,,FALSE,TRUE
+285,Atomic Bomb,Bomb Unit,600,0,,66,137,,,,14,,,,,,10,,,FALSE,TRUE
 286,Mechanized Infantry,Gunpowder Unit,375,0,,70,,,,,,,,,,90,,,,FALSE,TRUE
 287,XCOM Squad,Gunpowder Unit,400,0,,79,,,,,,,,,,100,,,,FALSE,TRUE
 288,Missile Cruiser,Ranged Unit,425,0,,73,,,,,,,,,,80,3,100,,TRUE,TRUE

@@ -155,23 +155,24 @@ graph_tbl_with_metrics = graph_tbl %>%
   mutate(
     pagerank = centrality_pagerank(),
     eigen = centrality_eigen(),
+    betweenness = centrality_betweenness(),
     community_infomap = as.factor(group_infomap())
   ) %>%
   group_by(community_infomap) %>%
   mutate(community_size = n()) %>%
   ungroup()
-centrality_scores = data.frame(eigen = graph_tbl_with_metrics %>% activate(nodes) %>% pull(eigen),
-                               pagerank = graph_tbl_with_metrics %>% activate(nodes) %>% pull(pagerank),
-                               community = graph_tbl_with_metrics %>% activate(nodes) %>% pull(community_infomap),
-                               name = graph_tbl_with_metrics %>% activate(nodes) %>% pull(pagerank) %>% names())
+centrality_scores = graph_tbl_with_metrics %>% activate(nodes) %>%
+  select(eigen, pagerank, betweenness, community_infomap) %>%
+  as.data.frame()
+centrality_scores$name = graph_tbl_with_metrics %>% activate(nodes) %>% pull(pagerank) %>% names()
 ggplot(centrality_scores %>%
          filter(eigen > 0.01 | pagerank > 0.01),
-       aes(log(eigen), log(pagerank), label = name, color = community)) +
+       aes(log(eigen), log(betweenness), label = name, color = community_infomap)) +
   geom_point() + geom_text(angle = 45)
 
 # igraph_layouts <- c('star', 'circle', 'gem', 'dh', 'graphopt', 'grid', 'mds', 'randomly', 'fr', 'kk', 'drl', 'lgl')
 # filter(community_infomap > 0)
-ggraph(graph_tbl_with_metrics %>% filter(community_size > 15),
+ggraph(graph_tbl_with_metrics %>% filter(community_size > 9),
        layout = 'auto') +   # 'fr' works well, 'stress' too
   geom_edge_link() +
   geom_node_text(aes(label = name, color = community_infomap)) +
