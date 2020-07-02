@@ -234,35 +234,35 @@
 233,Minuteman,Gunpowder Unit,150,0,,36,,249,,,,1,231,,,24,,,,FALSE,TRUE
 234,Musketeer,Gunpowder Unit,150,0,,36,,249,,,,16,231,,,28,,,,FALSE,TRUE
 235,Tercio,Gunpowder Unit,160,0,,36,,249,,,,40,231,,,26,,,,FALSE,TRUE
-236,Lancer,Mounted Unit,,,,,,274,,,9,,,,,,,,,FALSE,TRUE
-237,Hakkapeliitta,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
-238,Sipahi,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
-239,Winged Hussar,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
-240,Caravel,Melee Unit,,,,,,258,,,,,,,,,,,,TRUE,TRUE
-241,Nau,Melee Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
-242,Turtle Ship,Melee Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
-243,Privateer,Melee Unit,,,,,,265,,,,,,,,,,,,TRUE,TRUE
-244,Sea Beggar,Melee Unit,,,,,,,,,,,,,,,,,,TRUE,TRUE
-245,Frigate,Ranged Unit,,,,,,266,,,10,,,,,,,,,TRUE,TRUE
-246,Ship of the Line,Ranged Unit,,,,,,,,,10,,,,,,,,,TRUE,TRUE
-247,Gatling Gun,Ranged Unit,,,,,,259,,,,,,,,,,,,FALSE,TRUE
-248,Artillery,Siege Weapon,,,,,,273,,,,,,,,,,,,FALSE,TRUE
-249,Rifleman,Gunpowder Unit,,,,,,261,,,,,,,,,,,,FALSE,TRUE
-250,Carolean,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-251,Mehal Sefari,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-252,Norwegian Ski Infantry,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-253,Cavalry,Mounted Unit,,,,,,269,,,9,,,,,,,,,FALSE,TRUE
-254,Berber Cavalry,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-255,Comanche Riders,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-256,Cossack,Mounted Unit,,,,,,,,,9,,,,,,,,,FALSE,TRUE
-257,Hussar,Mounted Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-258,Ironclad,Melee Unit,,,,,,265,,,11,,,,,,,,,TRUE,TRUE
-259,Machine Gun,Ranged Unit,,,,,,272,,,,,,,,,,,,FALSE,TRUE
-260,Anti-Aircraft Gun,Gunpowder Unit,,,,,,276,,,,,,,,,,,,FALSE,TRUE
-261,Great War Infantry,Gunpowder Unit,,,,,,263,,,,,,,,,,,,FALSE,TRUE
-262,Foreign Legion,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
-263,Infantry,Gunpowder Unit,,,,,,286,,,,,,,,,,,,FALSE,TRUE
-264,Pracinha,Gunpowder Unit,,,,,,,,,,,,,,,,,,FALSE,TRUE
+236,Lancer,Mounted Unit,185,0,,40,,274,,,9,,,,,25,,,,FALSE,TRUE
+237,Hakkapeliitta,Mounted Unit,185,0,,40,,274,,,9,41,236,,,25,,,,FALSE,TRUE
+238,Sipahi,Mounted Unit,185,0,,40,,274,,,9,30,236,,,25,,,,FALSE,TRUE
+239,Winged Hussar,Mounted Unit,185,0,,40,,274,,,9,32,236,,,28,,,,FALSE,TRUE
+240,Caravel,Melee Unit,120,0,,32,,258,,,,,,,,20,,,,TRUE,TRUE
+241,Nau,Melee Unit,120,0,,32,,258,,,,34,240,,,20,,,,TRUE,TRUE
+242,Turtle Ship,Melee Unit,120,0,,32,,258,,,,25,240,,,36,,,,TRUE,TRUE
+243,Privateer,Melee Unit,150,0,,37,,265,,,,,,,,25,,,,TRUE,TRUE
+244,Sea Beggar,Melee Unit,150,0,,37,,265,,,,29,243,,,25,,,,TRUE,TRUE
+245,Frigate,Ranged Unit,185,0,,37,,266,,,10,,,,,25,2,28,,TRUE,TRUE
+246,Ship of the Line,Ranged Unit,185,0,,37,,266,,,10,14,245,,,30,2,35,,TRUE,TRUE
+247,Gatling Gun,Ranged Unit,225,0,,44,,259,,,,,,,,30,1,30,,FALSE,TRUE
+248,Artillery,Siege Weapon,320,0,,51,,273,,,,,,,,21,3,28,,FALSE,TRUE
+249,Rifleman,Gunpowder Unit,225,0,,45,,261,,,,,,,,34,,,,FALSE,TRUE
+250,Carolean,Gunpowder Unit,225,0,,45,,261,,,,41,249,,,34,,,,FALSE,TRUE
+251,Mehal Sefari,Gunpowder Unit,200,0,,45,,261,,,,15,249,,,34,,,,FALSE,TRUE
+252,Norwegian Ski Infantry,Gunpowder Unit,225,0,,45,,261,,,,12,249,,,34,,,,FALSE,TRUE
+253,Cavalry,Mounted Unit,225,0,,46,,269,,,9,,,,,34,,,,FALSE,TRUE
+254,Berber Cavalry,Mounted Unit,225,0,,46,,269,,,9,28,253,,,34,,,,FALSE,TRUE
+255,Comanche Riders,Mounted Unit,200,0,,46,,269,,,9,37,253,,,34,,,,FALSE,TRUE
+256,Cossack,Mounted Unit,225,0,,46,,269,,,9,36,253,,,34,,,,FALSE,TRUE
+257,Hussar,Mounted Unit,225,0,,46,,269,,,9,4,253,,,34,,,,FALSE,TRUE
+258,Ironclad,Melee Unit,250,0,,50,,265,,,11,,,,,45,,,,TRUE,TRUE
+259,Machine Gun,Ranged Unit,350,0,,59,,272,,,,,,,,60,1,60,,FALSE,TRUE
+260,Anti-Aircraft Gun,Gunpowder Unit,375,0,,59,,276,,,,,,,,50,2,,,FALSE,TRUE
+261,Great War Infantry,Gunpowder Unit,320,0,,54,,263,,,,,,,,50,,,,FALSE,TRUE
+262,Foreign Legion,Gunpowder Unit,320,0,,54,,263,,,,,,,,50,,,,FALSE,FALSE
+263,Infantry,Gunpowder Unit,375,0,,57,,286,,,,,,,,70,,,,FALSE,TRUE
+264,Pracinha,Gunpowder Unit,375,0,,57,,286,,,,7,263,,,70,,,,FALSE,TRUE
 265,Destroyer,Melee Unit,375,0,,60,,,,,,,,,,55,,,,TRUE,TRUE
 266,Battleship,Ranged Unit,375,0,,58,,,,,12,,,,,55,3,65,,TRUE,TRUE
 267,Carrier,Ranged Unit,375,0,,58,,,,,,,,,,40,,,,TRUE,TRUE

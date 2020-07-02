@@ -78,7 +78,14 @@ buildable_graph = buildable %>%
   filter(!is.na(dependsOnBuildableID)) %>%
   inner_join(buildable %>% rename(from = name),
              by = c("dependsOnBuildableID" = "buildableID")) %>%
-  select(to = name, from)
+  select(to = name, from) %>%
+  bind_rows(
+    buildable %>%
+      filter(!is.na(replacesBuildableID)) %>%
+      inner_join(buildable %>% rename(from = name),
+                 by = c("replacesBuildableID" = "buildableID")) %>%
+      select(to = name, from)
+  )
 
 unit_upgrade_graph = buildable %>%
   filter(!is.na(upgradesToBuildableID)) %>%
@@ -156,7 +163,8 @@ graph_tbl_with_metrics = graph_tbl %>%
     pagerank = centrality_pagerank(),
     eigen = centrality_eigen(),
     betweenness = centrality_betweenness(),
-    community_infomap = as.factor(group_infomap())
+    community_infomap = as.factor(group_infomap()),
+    degree = centrality_degree(mode = "total")
   ) %>%
   group_by(community_infomap) %>%
   mutate(community_size = n()) %>%
@@ -172,10 +180,10 @@ ggplot(centrality_scores %>%
 
 # igraph_layouts <- c('star', 'circle', 'gem', 'dh', 'graphopt', 'grid', 'mds', 'randomly', 'fr', 'kk', 'drl', 'lgl')
 # filter(community_infomap > 0)
-ggraph(graph_tbl_with_metrics %>% filter(community_size > 9),
-       layout = 'auto') +   # 'fr' works well, 'stress' too
+ggraph(graph_tbl_with_metrics %>% filter(degree > 2),
+       layout = 'fr') +   # 'fr' works well, 'stress' too
   geom_edge_link() +
-  geom_node_text(aes(label = name, color = community_infomap)) +
+  geom_node_label(aes(label = name, color = community_infomap), repel = TRUE) +
   theme_graph() +
   #facet_nodes(~community_infomap) +
   theme(legend.position = "none")
