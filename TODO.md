@@ -27,6 +27,7 @@
 1. Espionage
 1. Victory condition - more information
 1. AI traits
+1. Happiness: Global and Local
 1. Diplomacy
 1. Influence
    - Change rates
@@ -45,3 +46,4 @@
    - Effect when science building or Wonder is built in capital
 1. Science
    - Free unit on tech discovery
+1. Fog of War
