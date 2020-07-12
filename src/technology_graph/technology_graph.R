@@ -5,11 +5,13 @@
 require(tidyverse)
 require(tidygraph)
 require(ggraph)
-require(ggrepel)
+# require(ggrepel)
 
+action = read_csv("../../data/raw/action.csv")
 technology = read_csv("../../data/raw/technology.csv")
 buildable = read_csv("../../data/raw/buildable.csv")
 effect = read_csv("../../data/raw/effect.csv")
+buildable_effect_value = read_csv("../../data/raw/buildableEffectValue.csv")
 improvement = read_csv("../../data/raw/improvement.csv")
 resource = read_csv("../../data/raw/resource.csv")
 terrain = read_csv("../../data/raw/terrain.csv")
@@ -19,6 +21,20 @@ resource_improvement = read_csv("../../data/raw/resourceImprovement.csv")
 terrain_improvement = read_csv("../../data/raw/terrainImprovement.csv")
 resource_terrain = read_csv("../../data/raw/resourceTerrain.csv")
 water_type = read_csv("../../data/raw/waterType.csv")
+
+action_graph = action %>%
+  inner_join(action %>% rename(to = name), by = c("actionID" = "extendsActionID")) %>%
+  select(from = name, to)
+
+action_technology_graph = action %>%
+  inner_join(technology %>% rename(from = name),
+             by = c("dependsOnTechnologyID" = "technologyID")) %>%
+  select(from, to = name)
+
+action_improvement_graph = action %>%
+  inner_join(improvement %>% rename(from = name),
+             by = c("createsImprovementID" = "improvementID")) %>%
+  select(from, to = name)
 
 technology_graph = technology_dependency %>%
   inner_join(technology %>% rename(to = name), by = "technologyID") %>%
@@ -100,11 +116,11 @@ unit_upgrade_graph = buildable %>%
       select(from = name, to)
   )
 
-effect_graph = effect %>%
+buildable_effect_value_graph = buildable_effect_value %>%
   inner_join(buildable %>% rename(from = name),
              by = c("buildableID" = "buildableID")) %>%
   inner_join(buildable %>% rename(to = name),
-             by = c("givesFreeBuildableID" = "buildableID")) %>%
+             by = c("effectBuildableID" = "buildableID")) %>%
   select(to, from)
 
 improvement_graph = improvement %>%
@@ -143,7 +159,6 @@ graph_data = technology_graph %>%
   bind_rows(technology_buildable_graph) %>%
   bind_rows(unit_upgrade_graph) %>%
   bind_rows(improvement_graph) %>%
-  bind_rows(effect_graph) %>%
   bind_rows(technology_resource_graph) %>%
   bind_rows(buildable_resource_graph) %>%
   bind_rows(terrain_graph) %>%
@@ -151,7 +166,11 @@ graph_data = technology_graph %>%
   bind_rows(resource_improvement_graph) %>%
   bind_rows(terrain_improvement_graph) %>%
   bind_rows(resource_terrain_graph) %>%
-  bind_rows(civilization_graph)
+  bind_rows(civilization_graph) %>%
+  bind_rows(action_graph) %>%
+  bind_rows(action_improvement_graph) %>%
+  bind_rows(action_technology_graph) %>%
+  bind_rows(buildable_effect_value_graph)
 graph_data_dense = graph_data %>%
   select(from = to, to = from)  # we want direction of centrality importance
                                 # to flow backwards in time
@@ -164,7 +183,8 @@ graph_tbl_with_metrics = graph_tbl %>%
     eigen = centrality_eigen(),
     betweenness = centrality_betweenness(),
     community_infomap = as.factor(group_infomap()),
-    degree = centrality_degree(mode = "total")
+    degree = centrality_degree(mode = "total"),
+    is_civ = name %in% civilization$name
   ) %>%
   group_by(community_infomap) %>%
   mutate(community_size = n()) %>%
@@ -180,10 +200,10 @@ ggplot(centrality_scores %>%
 
 # igraph_layouts <- c('star', 'circle', 'gem', 'dh', 'graphopt', 'grid', 'mds', 'randomly', 'fr', 'kk', 'drl', 'lgl')
 # filter(community_infomap > 0)
-ggraph(graph_tbl_with_metrics %>% filter(degree > 2),
+ggraph(graph_tbl_with_metrics %>% filter(degree > 1),
        layout = 'fr') +   # 'fr' works well, 'stress' too
   geom_edge_link() +
-  geom_node_label(aes(label = name, color = community_infomap), repel = TRUE) +
+  geom_node_label(aes(label = name, color = is_civ)) +
   theme_graph() +
   #facet_nodes(~community_infomap) +
   theme(legend.position = "none")

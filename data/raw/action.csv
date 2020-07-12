@@ -1,5 +1,17 @@
-﻿actionID,name,extendsActionID,createsImprovementID
-1,Great Tile improvement,,
-2,Start a Golden Age,,
-3,Construct a Citadel,1,16
-4,Heal,,
+﻿actionID,name,extendsActionID,createsImprovementID,dependsOnTechnologyID
+1,Create Great Tile improvement,11,,
+2,Start a Golden Age,,,
+3,Construct a Citadel,1,16,
+4,Heal,,,
+5,Clear terrain,,,
+6,Clear a forest,5,,5
+7,Clear a marsh,5,,11
+8,Clear a jungle,5,,11
+9,Repair damaged improvement,,,
+10,Scrub radioactive fallout,,,
+11,Create improvement,,,
+12,Construct an Academy,11,15,
+13,Construct a Customs House,11,17,
+14,Construct a Holy Site,11,18,
+15,Construct a Landmark,11,19,
+16,Construct a Manufactory,11,20,
