@@ -47,3 +47,4 @@
 1. Science
    - Free unit on tech discovery
 1. Fog of War
+1. Hex logo like the R community; make it look like a Civ V tile
