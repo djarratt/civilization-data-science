@@ -12,6 +12,7 @@ technology = read_csv("../../data/raw/technology.csv")
 buildable = read_csv("../../data/raw/buildable.csv")
 effect = read_csv("../../data/raw/effect.csv")
 buildable_effect_value = read_csv("../../data/raw/buildableEffectValue.csv")
+buildable_action_dependency = read_csv("../../data/raw/buildableActionDependency.csv")
 improvement = read_csv("../../data/raw/improvement.csv")
 resource = read_csv("../../data/raw/resource.csv")
 terrain = read_csv("../../data/raw/terrain.csv")
@@ -21,19 +22,27 @@ resource_improvement = read_csv("../../data/raw/resourceImprovement.csv")
 terrain_improvement = read_csv("../../data/raw/terrainImprovement.csv")
 resource_terrain = read_csv("../../data/raw/resourceTerrain.csv")
 water_type = read_csv("../../data/raw/waterType.csv")
+great_work = read_csv("../../data/raw/greatWork.csv")
+buildable_great_work_slots = read_csv("../../data/raw/buildableGreatWorkSlots.csv")
 
-action_graph = action %>%
-  inner_join(action %>% rename(to = name), by = c("actionID" = "extendsActionID")) %>%
-  select(from = name, to)
+buildable_action_graph = buildable_action_dependency %>%
+  inner_join(buildable %>% rename(from = name), by = "buildableID") %>%
+  inner_join(action %>% rename(to = name), by = "actionID") %>%
+  select(from, to)
+
+buildable_great_work_graph = buildable_great_work_slots %>%
+  inner_join(buildable %>% rename(from = name), by = "buildableID") %>%
+  inner_join(great_work %>% rename(to = name), by = "greatWorkID") %>%
+  select(from, to)
 
 action_technology_graph = action %>%
   inner_join(technology %>% rename(from = name),
              by = c("dependsOnTechnologyID" = "technologyID")) %>%
   select(from, to = name)
 
-action_improvement_graph = action %>%
-  inner_join(improvement %>% rename(from = name),
-             by = c("createsImprovementID" = "improvementID")) %>%
+action_improvement_graph = improvement %>%
+  inner_join(action %>% rename(from = name),
+             by = c("improvedByActionID" = "actionID")) %>%
   select(from, to = name)
 
 technology_graph = technology_dependency %>%
@@ -167,10 +176,11 @@ graph_data = technology_graph %>%
   bind_rows(terrain_improvement_graph) %>%
   bind_rows(resource_terrain_graph) %>%
   bind_rows(civilization_graph) %>%
-  bind_rows(action_graph) %>%
   bind_rows(action_improvement_graph) %>%
   bind_rows(action_technology_graph) %>%
-  bind_rows(buildable_effect_value_graph)
+  bind_rows(buildable_effect_value_graph) %>%
+  bind_rows(buildable_action_graph) %>%
+  bind_rows(buildable_great_work_graph)
 graph_data_dense = graph_data %>%
   select(from = to, to = from)  # we want direction of centrality importance
                                 # to flow backwards in time
