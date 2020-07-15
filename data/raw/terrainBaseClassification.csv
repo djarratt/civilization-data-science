@@ -1,0 +1,11 @@
+﻿terrainBaseClassificationID,name,extendsTerrainBaseClassificationID1,extendsTerrainBaseClassificationID2
+1,Water,,
+2,Open Land,7,
+3,Rough Land,7,
+4,Generally Impassable Water,1,10
+5,Generally Impassable Land,7,10
+6,Generally Impassable Natural Wonder,10,
+7,Land,,
+8,Generally Impassable Land Natural Wonder,6,7
+9,Generally Impassable Water Natural Wonder,6,1
+10,Generally Impassable,,
