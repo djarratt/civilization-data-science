@@ -1,4 +1,4 @@
-﻿resourceID,resourceID,value,dependsOnBuildableID,dependsOnReligiousBeliefID,dependsOnImprovementID,dependsOnTechnologyID
+﻿resourceID1,resourceID2,value,dependsOnBuildableID,dependsOnReligiousBeliefID,dependsOnImprovementID,dependsOnTechnologyID
 1,42,1,,,,
 1,42,1,2,,,
 1,42,1,,25,,

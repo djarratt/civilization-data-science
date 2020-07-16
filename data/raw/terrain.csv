@@ -1,4 +1,4 @@
-﻿terrainID,name,terrainBaseClassificationID,featureClassification,waterTypeID,waterProximityID
+﻿terrainID,name,terrainBaseClassificationID,terrainFeatureClassificationID,waterTypeID,waterProximityID
 1,Coast,1,1,2,1
 2,Desert,2,1,,
 3,Grassland,2,1,,

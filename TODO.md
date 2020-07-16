@@ -7,7 +7,7 @@
    - Ideology as a concept based on either 3 factories (i.e. civ size of 3 plus 3 factory costs plus 3 coal) or modern era
 1. Abilities and attributes and resources
    - Promotions and abilities
-   - Really any linking of things to resources
+   - Adjacent military units by natural wonders effects
    - Idea of single city versus empire-wide effect
    - Terrain movement; movement in mountains, hills per civ
    - Sight and zone of control and attacks per turn and other unit stats
