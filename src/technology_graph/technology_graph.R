@@ -352,7 +352,7 @@ centrality_scores = graph_tbl_with_metrics %>% activate(nodes) %>%
 centrality_scores$name = graph_tbl_with_metrics %>% activate(nodes) %>% pull(pagerank) %>% names()
 ggplot(centrality_scores %>%
          filter(eigen > 0.01 | pagerank > 0.01),
-       aes(log(eigen), log(betweenness), label = name, color = community_infomap)) +
+       aes(eigen, betweenness, label = name, color = community_infomap)) +
   geom_point() + geom_text(angle = 45)
 
 # igraph_layouts <- c('star', 'circle', 'gem', 'dh', 'graphopt', 'grid', 'mds', 'randomly', 'fr', 'kk', 'drl', 'lgl')
